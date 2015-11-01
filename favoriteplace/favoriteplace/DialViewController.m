@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *currentAngleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *locationAngleLabel;
 @property (weak, nonatomic) IBOutlet UIView *fakeView;
+@property (weak, nonatomic) IBOutlet UITabBar *dialMenu;
 
 @end
 
@@ -27,6 +28,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.dialMenu.delegate = self;
+    
     [self.fakeView setUserInteractionEnabled:YES];
     /*[self.pointerImageView setUserInteractionEnabled:YES];
     [self.dialImageView setUserInteractionEnabled:YES];
@@ -63,6 +67,10 @@
         [[self locationAngleLabel] setText:[NSString stringWithFormat:@"%d",(int)degrees]];
     });
     //NSLog(@"Magnetic Heading: %f", newHeading.magneticHeading);
+}
+
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
+    NSLog(@"didSelectItem: %d", item.tag);
 }
 
 
