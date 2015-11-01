@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 
-@interface DialViewController : UIViewController
+@interface DialViewController : UIViewController <CLLocationManagerDelegate> {
+    CLLocationManager *_locationManager;
+}
+
+@property(nonatomic,retain) CLLocationManager *locationManager;
 
 @end

@@ -9,6 +9,17 @@
 #import "DialViewController.h"
 
 @interface DialViewController ()
+{
+    dispatch_queue_t compassQueue;
+}
+
+@property (weak, nonatomic) IBOutlet UIImageView *pointerImageView;
+@property (weak, nonatomic) IBOutlet UIImageView *dialImageView;
+@property (weak, nonatomic) IBOutlet UILabel *loationLabel;
+@property (weak, nonatomic) IBOutlet UILabel *distanceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *currentAngleLabel;
+@property (weak, nonatomic) IBOutlet UILabel *locationAngleLabel;
+@property (weak, nonatomic) IBOutlet UIView *fakeView;
 
 @end
 
@@ -16,8 +27,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self.fakeView setUserInteractionEnabled:YES];
+    /*[self.pointerImageView setUserInteractionEnabled:YES];
+    [self.dialImageView setUserInteractionEnabled:YES];
+    [self.loationLabel setUserInteractionEnabled:YES];
+    [self.distanceLabel setUserInteractionEnabled:YES];
+    [self.currentAngleLabel setUserInteractionEnabled:YES];
+    [self.locationAngleLabel setUserInteractionEnabled:YES];*/
+    
+    if (!compassQueue)
+    {
+        compassQueue = dispatch_queue_create("com.skanderjabouzi.queue", NULL);
+    }
+
+    
+    
+    CLLocationManager *locationManager = [[CLLocationManager alloc]  init];
+    [self setLocationManager:locationManager];
+    
+    self.locationManager.delegate = self;
+    
+    dispatch_async(compassQueue, ^{
+        if([CLLocationManager headingAvailable]) {
+            [   self.locationManager startUpdatingHeading];
+        }
+    });
 }
+
+- (void) locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
+{
+    dispatch_async(dispatch_get_main_queue(), ^{
+        double degrees = newHeading.magneticHeading;
+        double radians = degrees * M_PI / 180;
+        [self pointerImageView].transform = CGAffineTransformMakeRotation(radians);
+        [[self locationAngleLabel] setText:[NSString stringWithFormat:@"%d",(int)degrees]];
+    });
+    //NSLog(@"Magnetic Heading: %f", newHeading.magneticHeading);
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

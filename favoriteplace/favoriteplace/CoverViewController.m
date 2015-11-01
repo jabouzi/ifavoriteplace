@@ -9,6 +9,7 @@
 #import "CoverViewController.h"
 
 @interface CoverViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *coverImageView;
 
 @end
 
@@ -16,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [UIApplication sharedApplication].statusBarHidden = YES;
+    [self.coverImageView setUserInteractionEnabled:YES];
     // Do any additional setup after loading the view.
 }
 

@@ -39,15 +39,18 @@
                             <constraint firstAttribute="trailing" secondItem="JC6-Yq-PDM" secondAttribute="trailing" id="nDZ-kq-tmB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="coverImageView" destination="JC6-Yq-PDM" id="Y7Y-6X-DTW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="up" id="kDM-M9-IuQ">
                     <connections>
-                        <segue destination="KTu-x9-LfT" kind="custom" customClass="BottomToTopSegue" id="xc3-aR-1kx"/>
+                        <segue destination="KTu-x9-LfT" kind="custom" customClass="BottomToTopSegue" id="pgA-EC-QSh"/>
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="17" y="427"/>
+            <point key="canvasLocation" x="22" y="427"/>
         </scene>
         <!--Dial View Controller-->
         <scene sceneID="Iea-M2-U8J">
@@ -73,6 +76,20 @@
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWz-3L-GIH">
+                                <rect key="frame" x="20" y="60" width="560" height="21"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Cym-xe-RgB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXu-NN-wYO">
@@ -105,9 +122,6 @@
                                 <rect key="frame" x="20" y="83" width="560" height="430"/>
                                 <animations/>
                                 <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="SCK-4P-Q3Y" appends="YES" id="Mpp-ub-q32"/>
-                                </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVu-sK-quU">
                                 <rect key="frame" x="20" y="547" width="131" height="21"/>
@@ -137,23 +151,14 @@
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWz-3L-GIH">
-                                <rect key="frame" x="20" y="60" width="560" height="21"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XDa-OC-t8J">
+                                <rect key="frame" x="60" y="0.0" width="600" height="600"/>
                                 <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="Cym-xe-RgB"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=regular">
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                </variation>
-                            </label>
+                            </view>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="gII-mY-lt0" firstAttribute="trailing" secondItem="CWz-3L-GIH" secondAttribute="trailing" id="6FW-0Y-iDO"/>
                             <constraint firstItem="CPL-Oc-acL" firstAttribute="trailing" secondItem="ePa-cn-0yz" secondAttribute="trailing" id="8IW-dL-V5f"/>
@@ -182,10 +187,26 @@
                             <constraint firstItem="CWz-3L-GIH" firstAttribute="trailing" secondItem="zYq-Jn-4ZA" secondAttribute="trailing" id="vSO-Jt-Sw8"/>
                             <constraint firstItem="LB8-HY-dCx" firstAttribute="trailing" secondItem="ePa-cn-0yz" secondAttribute="trailing" id="yvk-6t-lOA"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="gDC-k0-0i9" appends="YES" id="Dnh-Qk-aLC"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="currentAngleLabel" destination="SXu-NN-wYO" id="wba-8c-lf2"/>
+                        <outlet property="dialImageView" destination="gII-mY-lt0" id="XgE-e7-SJu"/>
+                        <outlet property="distanceLabel" destination="CWz-3L-GIH" id="LbQ-qL-srH"/>
+                        <outlet property="fakeView" destination="XDa-OC-t8J" id="SJK-RX-0WW"/>
+                        <outlet property="loationLabel" destination="zYq-Jn-4ZA" id="epA-4N-jVR"/>
+                        <outlet property="locationAngleLabel" destination="LB8-HY-dCx" id="KSp-iO-yWe"/>
+                        <outlet property="pointerImageView" destination="CPL-Oc-acL" id="ko9-Le-fEM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbI-ro-Nze" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <swipeGestureRecognizer direction="up" id="SCK-4P-Q3Y"/>
+                <swipeGestureRecognizer direction="down" id="gDC-k0-0i9">
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="custom" customClass="TopToBottomSegue" id="z6X-lO-pcP"/>
+                    </connections>
+                </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="700" y="432"/>
         </scene>
