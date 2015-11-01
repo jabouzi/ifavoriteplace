@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		72A567641BE6439800255295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567631BE6439800255295 /* main.m */; };
 		72A567671BE6439800255295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567661BE6439800255295 /* AppDelegate.m */; };
-		72A5676A1BE6439800255295 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567691BE6439800255295 /* ViewController.m */; };
 		72A5676D1BE6439800255295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5676B1BE6439800255295 /* Main.storyboard */; };
 		72A5676F1BE6439800255295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A5676E1BE6439800255295 /* Assets.xcassets */; };
 		72A567721BE6439800255295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A567701BE6439800255295 /* LaunchScreen.storyboard */; };
+		72A5677D1BE645B500255295 /* dial.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5677A1BE645B500255295 /* dial.png */; };
+		72A567881BE6582000255295 /* pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A567871BE6582000255295 /* pointer.png */; };
+		72C87A781BE66D660042B734 /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C87A771BE66D660042B734 /* cover.png */; };
+		72C87A7B1BE66DCD0042B734 /* DialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C87A7A1BE66DCD0042B734 /* DialViewController.m */; };
+		72C87A7E1BE66DEF0042B734 /* CoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C87A7D1BE66DEF0042B734 /* CoverViewController.m */; };
+		72C87A831BE66DFE0042B734 /* BottomToTopSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C87A801BE66DFE0042B734 /* BottomToTopSegue.m */; };
+		72C87A841BE66DFE0042B734 /* TopToBottomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C87A821BE66DFE0042B734 /* TopToBottomSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +26,21 @@
 		72A567631BE6439800255295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72A567651BE6439800255295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		72A567661BE6439800255295 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		72A567681BE6439800255295 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		72A567691BE6439800255295 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		72A5676C1BE6439800255295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72A5676E1BE6439800255295 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72A567711BE6439800255295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72A567731BE6439800255295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72A5677A1BE645B500255295 /* dial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial.png; sourceTree = "<group>"; };
+		72A567871BE6582000255295 /* pointer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer.png; sourceTree = "<group>"; };
+		72C87A771BE66D660042B734 /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
+		72C87A791BE66DCD0042B734 /* DialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialViewController.h; sourceTree = "<group>"; };
+		72C87A7A1BE66DCD0042B734 /* DialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialViewController.m; sourceTree = "<group>"; };
+		72C87A7C1BE66DEF0042B734 /* CoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverViewController.h; sourceTree = "<group>"; };
+		72C87A7D1BE66DEF0042B734 /* CoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverViewController.m; sourceTree = "<group>"; };
+		72C87A7F1BE66DFE0042B734 /* BottomToTopSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BottomToTopSegue.h; sourceTree = "<group>"; };
+		72C87A801BE66DFE0042B734 /* BottomToTopSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomToTopSegue.m; sourceTree = "<group>"; };
+		72C87A811BE66DFE0042B734 /* TopToBottomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopToBottomSegue.h; sourceTree = "<group>"; };
+		72C87A821BE66DFE0042B734 /* TopToBottomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopToBottomSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +57,9 @@
 		72A567561BE6439700255295 = {
 			isa = PBXGroup;
 			children = (
+				72C87A771BE66D660042B734 /* cover.png */,
+				72A567871BE6582000255295 /* pointer.png */,
+				72A5677A1BE645B500255295 /* dial.png */,
 				72A567611BE6439800255295 /* favoriteplace */,
 				72A567601BE6439800255295 /* Products */,
 			);
@@ -58,10 +76,16 @@
 		72A567611BE6439800255295 /* favoriteplace */ = {
 			isa = PBXGroup;
 			children = (
+				72C87A7F1BE66DFE0042B734 /* BottomToTopSegue.h */,
+				72C87A801BE66DFE0042B734 /* BottomToTopSegue.m */,
+				72C87A811BE66DFE0042B734 /* TopToBottomSegue.h */,
+				72C87A821BE66DFE0042B734 /* TopToBottomSegue.m */,
+				72C87A791BE66DCD0042B734 /* DialViewController.h */,
+				72C87A7A1BE66DCD0042B734 /* DialViewController.m */,
 				72A567651BE6439800255295 /* AppDelegate.h */,
 				72A567661BE6439800255295 /* AppDelegate.m */,
-				72A567681BE6439800255295 /* ViewController.h */,
-				72A567691BE6439800255295 /* ViewController.m */,
+				72C87A7C1BE66DEF0042B734 /* CoverViewController.h */,
+				72C87A7D1BE66DEF0042B734 /* CoverViewController.m */,
 				72A5676B1BE6439800255295 /* Main.storyboard */,
 				72A5676E1BE6439800255295 /* Assets.xcassets */,
 				72A567701BE6439800255295 /* LaunchScreen.storyboard */,
@@ -137,8 +161,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				72A567721BE6439800255295 /* LaunchScreen.storyboard in Resources */,
+				72A5677D1BE645B500255295 /* dial.png in Resources */,
 				72A5676F1BE6439800255295 /* Assets.xcassets in Resources */,
+				72C87A781BE66D660042B734 /* cover.png in Resources */,
 				72A5676D1BE6439800255295 /* Main.storyboard in Resources */,
+				72A567881BE6582000255295 /* pointer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,9 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72A5676A1BE6439800255295 /* ViewController.m in Sources */,
+				72C87A7B1BE66DCD0042B734 /* DialViewController.m in Sources */,
 				72A567671BE6439800255295 /* AppDelegate.m in Sources */,
+				72C87A7E1BE66DEF0042B734 /* CoverViewController.m in Sources */,
 				72A567641BE6439800255295 /* main.m in Sources */,
+				72C87A831BE66DFE0042B734 /* BottomToTopSegue.m in Sources */,
+				72C87A841BE66DFE0042B734 /* TopToBottomSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +332,7 @@
 				72A567781BE6439800255295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
