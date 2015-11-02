@@ -22,6 +22,7 @@
 		72C87A8A1BE677400042B734 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C87A891BE677400042B734 /* icon.png */; };
 		72C87A8D1BE6ACC70042B734 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C87A8B1BE6ACC70042B734 /* about.png */; };
 		72C87A8E1BE6ACC70042B734 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C87A8C1BE6ACC70042B734 /* settings.png */; };
+		72C87A911BE6FBEB0042B734 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C87A901BE6FBEB0042B734 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,8 @@
 		72C87A891BE677400042B734 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		72C87A8B1BE6ACC70042B734 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		72C87A8C1BE6ACC70042B734 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		72C87A8F1BE6FBEB0042B734 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		72C87A901BE6FBEB0042B734 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 				72A567661BE6439800255295 /* AppDelegate.m */,
 				72C87A7C1BE66DEF0042B734 /* CoverViewController.h */,
 				72C87A7D1BE66DEF0042B734 /* CoverViewController.m */,
+				72C87A8F1BE6FBEB0042B734 /* SettingsViewController.h */,
+				72C87A901BE6FBEB0042B734 /* SettingsViewController.m */,
 				72A5676B1BE6439800255295 /* Main.storyboard */,
 				72A5676E1BE6439800255295 /* Assets.xcassets */,
 				72A567701BE6439800255295 /* LaunchScreen.storyboard */,
@@ -194,6 +199,7 @@
 				72A567641BE6439800255295 /* main.m in Sources */,
 				72C87A831BE66DFE0042B734 /* BottomToTopSegue.m in Sources */,
 				72C87A841BE66DFE0042B734 /* TopToBottomSegue.m in Sources */,
+				72C87A911BE6FBEB0042B734 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

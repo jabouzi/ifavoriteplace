@@ -7,6 +7,7 @@
 //
 
 #import "DialViewController.h"
+#import "CoverViewController.h"
 
 @interface DialViewController ()
 {
@@ -70,9 +71,9 @@
 }
 
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
-    NSLog(@"didSelectItem: %d", item.tag);
+    NSLog(@"didSelectItem: %ld", (long)item.tag);
+    [self performSegueWithIdentifier:@"settingsSegue" sender:self];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
