@@ -72,7 +72,10 @@
 
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
     NSLog(@"didSelectItem: %ld", (long)item.tag);
-    [self performSegueWithIdentifier:@"settingsSegue" sender:self];
+    if (item.tag == 0)
+    {
+        [self performSegueWithIdentifier:@"settingsSegue" sender:self];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
