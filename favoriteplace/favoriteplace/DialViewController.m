@@ -97,7 +97,7 @@
         
     }*/
     if (touch.view == self.fakeView) return YES;
-    else return NO;
+    return NO;
 }
 
 -(void)handleSingleTapGesture:(UITapGestureRecognizer *)tapGestureRecognizer{
