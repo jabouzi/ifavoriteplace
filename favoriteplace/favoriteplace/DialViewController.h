@@ -9,11 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
 
-@interface DialViewController : UIViewController <CLLocationManagerDelegate, UITabBarDelegate> {
-    CLLocationManager *_locationManager;
+@interface DialViewController : UIViewController <CLLocationManagerDelegate, UITabBarDelegate, UIGestureRecognizerDelegate> {
+    //CLLocationManager *_locationManager;
 }
 
+
 @property(nonatomic,retain) CLLocationManager *locationManager;
+@property(nonatomic,retain) UITapGestureRecognizer *singleTapGestureRecognizer;
 //@property(nonatomic,retain) UITabBar *dialMenu;
 
 @end

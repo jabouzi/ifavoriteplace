@@ -23,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UIView *fakeView;
 @property (weak, nonatomic) IBOutlet UITabBar *dialMenu;
 
+
 @end
 
 @implementation DialViewController
@@ -40,6 +41,11 @@
     [self.currentAngleLabel setUserInteractionEnabled:YES];
     [self.locationAngleLabel setUserInteractionEnabled:YES];*/
     
+    
+    self.singleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTapGesture:)];
+    self.singleTapGestureRecognizer.delegate = self;
+    [self.fakeView addGestureRecognizer:self.singleTapGestureRecognizer];
+    
     if (!compassQueue)
     {
         compassQueue = dispatch_queue_create("com.skanderjabouzi.queue", NULL);
@@ -47,8 +53,8 @@
 
     
     
-    CLLocationManager *locationManager = [[CLLocationManager alloc]  init];
-    [self setLocationManager:locationManager];
+    self.locationManager = [[CLLocationManager alloc]  init];
+    //[self setLocationManager:locationManager];
     
     self.locationManager.delegate = self;
     
@@ -71,7 +77,7 @@
 }
 
 - (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
-    NSLog(@"didSelectItem: %ld", (long)item.tag);
+    //NSLog(@"didSelectItem: %ld", (long)item.tag);
     if (item.tag == 0)
     {
         [self performSegueWithIdentifier:@"settingsSegue" sender:self];
@@ -83,14 +89,25 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+    
+    //NSLog(@"%d", (touch.view == self.fakeView));
+    /*if (( [touch isKindOfClass:NSClassFromString(@"UIView")])) {//change it to your condition
+      NSLog(@" #UIVIEW# ");
+        
+    }*/
+    if (touch.view == self.fakeView) return YES;
+    else return NO;
 }
-*/
+
+-(void)handleSingleTapGesture:(UITapGestureRecognizer *)tapGestureRecognizer{
+    
+    
+    //self.dialMenu.delegate = self;
+    if (self.dialMenu.hidden == NO)  self.dialMenu.hidden = YES;
+    else self.dialMenu.hidden = NO;
+    
+}
+
 
 @end
