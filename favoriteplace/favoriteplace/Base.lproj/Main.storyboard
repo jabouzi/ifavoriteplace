@@ -21,7 +21,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-cover" translatesAutoresizingMaskIntoConstraints="NO" id="JC6-Yq-PDM">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="25" y="25" width="550" height="550"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -29,14 +29,28 @@
                                     <outletCollection property="gestureRecognizers" destination="kDM-M9-IuQ" appends="YES" id="811-nI-ip1"/>
                                 </connections>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to opne and swipe down to close" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXx-Ly-7fM">
+                                <rect key="frame" x="137" y="0.0" width="327" height="20"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="327" id="AkX-NB-941"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="JC6-Yq-PDM" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="3BJ-Ub-qcF"/>
-                            <constraint firstItem="JC6-Yq-PDM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4r1-FE-iYe"/>
-                            <constraint firstItem="JC6-Yq-PDM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="9LG-dJ-9gp"/>
-                            <constraint firstAttribute="trailing" secondItem="JC6-Yq-PDM" secondAttribute="trailing" id="nDZ-kq-tmB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JC6-Yq-PDM" secondAttribute="bottom" constant="25" id="3Yx-u0-5tV"/>
+                            <constraint firstItem="JC6-Yq-PDM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BWl-Sw-AeV"/>
+                            <constraint firstItem="iXx-Ly-7fM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Gkg-wU-Usn"/>
+                            <constraint firstItem="JC6-Yq-PDM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H6U-mO-mOE"/>
+                            <constraint firstItem="JC6-Yq-PDM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="K4H-zA-7TI"/>
+                            <constraint firstItem="JC6-Yq-PDM" firstAttribute="top" secondItem="iXx-Ly-7fM" secondAttribute="bottom" constant="5" id="iPR-gB-ALx"/>
+                            <constraint firstItem="iXx-Ly-7fM" firstAttribute="centerX" secondItem="JC6-Yq-PDM" secondAttribute="centerX" id="lUi-ph-ZZf"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -292,6 +306,6 @@
         <image name="settings.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CmI-aN-cvt"/>
+        <segue reference="pgA-EC-QSh"/>
     </inferredMetricsTieBreakers>
 </document>
