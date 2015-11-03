@@ -23,6 +23,7 @@
 		72C87A8D1BE6ACC70042B734 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C87A8B1BE6ACC70042B734 /* about.png */; };
 		72C87A8E1BE6ACC70042B734 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C87A8C1BE6ACC70042B734 /* settings.png */; };
 		72C87A911BE6FBEB0042B734 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C87A901BE6FBEB0042B734 /* SettingsViewController.m */; };
+		72C87A931BE977890042B734 /* skander_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C87A921BE977890042B734 /* skander_logo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		72C87A8C1BE6ACC70042B734 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		72C87A8F1BE6FBEB0042B734 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		72C87A901BE6FBEB0042B734 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		72C87A921BE977890042B734 /* skander_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skander_logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		72A567561BE6439700255295 = {
 			isa = PBXGroup;
 			children = (
+				72C87A921BE977890042B734 /* skander_logo.png */,
 				72C87A8B1BE6ACC70042B734 /* about.png */,
 				72C87A8C1BE6ACC70042B734 /* settings.png */,
 				72C87A891BE677400042B734 /* icon.png */,
@@ -175,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72A567721BE6439800255295 /* LaunchScreen.storyboard in Resources */,
+				72C87A931BE977890042B734 /* skander_logo.png in Resources */,
 				72C87A8A1BE677400042B734 /* icon.png in Resources */,
 				72A5677D1BE645B500255295 /* dial.png in Resources */,
 				72A5676F1BE6439800255295 /* Assets.xcassets in Resources */,
