@@ -22,6 +22,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *locationAngleLabel;
 @property (weak, nonatomic) IBOutlet UIView *fakeView;
 @property (weak, nonatomic) IBOutlet UITabBar *dialMenu;
+@property (weak, nonatomic) IBOutlet UIImageView *pointer2ImageView;
 
 
 @end
@@ -30,6 +31,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    double direction = 58 * M_PI / 180;
+    [self pointer2ImageView].transform = CGAffineTransformMakeRotation(direction);
     
     self.dialMenu.delegate = self;
     
