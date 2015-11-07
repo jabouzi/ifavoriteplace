@@ -181,6 +181,11 @@
                                         <rect key="frame" x="0.0" y="551" width="600" height="49"/>
                                         <animations/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="PxE-NX-kov">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="65"/>
+                                            </constraint>
+                                        </constraints>
                                         <items>
                                             <tabBarItem title="Settings" image="settings.png" id="6b1-E8-r3p"/>
                                             <tabBarItem tag="1" title="About" image="about.png" id="2E5-SW-7dU"/>
