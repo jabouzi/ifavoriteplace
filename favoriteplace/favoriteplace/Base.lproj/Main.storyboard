@@ -136,9 +136,10 @@
                                 <rect key="frame" x="20" y="83" width="560" height="430"/>
                                 <animations/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-pointer2" translatesAutoresizingMaskIntoConstraints="NO" id="mzV-wc-pId">
-                                <rect key="frame" x="20" y="83" width="560" height="430"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-pointer2" translatesAutoresizingMaskIntoConstraints="NO" id="P8t-n0-4cn">
+                                <rect key="frame" x="20" y="85" width="560" height="430"/>
                                 <animations/>
+                                <gestureRecognizers/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-pointer" translatesAutoresizingMaskIntoConstraints="NO" id="CPL-Oc-acL">
                                 <rect key="frame" x="20" y="83" width="560" height="430"/>
@@ -182,7 +183,7 @@
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="49" id="SdQ-05-LzL">
-                                                <variation key="heightClass=regular-widthClass=regular" constant="70"/>
+                                                <variation key="heightClass=regular-widthClass=regular" constant="65"/>
                                             </constraint>
                                         </constraints>
                                         <items>
@@ -205,6 +206,7 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="gII-mY-lt0" firstAttribute="leading" secondItem="CPL-Oc-acL" secondAttribute="leading" id="1Qq-FN-fEK"/>
+                            <constraint firstItem="P8t-n0-4cn" firstAttribute="trailing" secondItem="CPL-Oc-acL" secondAttribute="trailing" id="2Ew-hU-asp"/>
                             <constraint firstItem="ePa-cn-0yz" firstAttribute="baseline" secondItem="iVu-sK-quU" secondAttribute="firstBaseline" id="5RJ-WQ-LaF"/>
                             <constraint firstItem="SXu-NN-wYO" firstAttribute="top" secondItem="iVu-sK-quU" secondAttribute="bottom" constant="4" id="5hl-12-tad"/>
                             <constraint firstItem="iVu-sK-quU" firstAttribute="baseline" secondItem="ePa-cn-0yz" secondAttribute="baseline" id="6yf-c2-zid"/>
@@ -212,16 +214,16 @@
                             <constraint firstItem="LB8-HY-dCx" firstAttribute="trailing" secondItem="ePa-cn-0yz" secondAttribute="trailing" id="EgX-SF-GsF"/>
                             <constraint firstItem="iVu-sK-quU" firstAttribute="top" secondItem="CPL-Oc-acL" secondAttribute="bottom" constant="32" id="FW6-8q-YMe"/>
                             <constraint firstItem="XDa-OC-t8J" firstAttribute="bottom" secondItem="0gS-n5-Qn3" secondAttribute="top" id="FcS-kF-OAY"/>
+                            <constraint firstItem="P8t-n0-4cn" firstAttribute="top" secondItem="CWz-3L-GIH" secondAttribute="bottom" constant="4" id="G5a-fr-zC4"/>
                             <constraint firstAttribute="trailing" secondItem="XDa-OC-t8J" secondAttribute="trailing" id="Ggg-Gu-h6d"/>
                             <constraint firstItem="ePa-cn-0yz" firstAttribute="leading" secondItem="LB8-HY-dCx" secondAttribute="leading" id="IDo-2K-fK1"/>
-                            <constraint firstItem="mzV-wc-pId" firstAttribute="trailing" secondItem="gII-mY-lt0" secondAttribute="trailing" id="JQE-oD-Ikq"/>
-                            <constraint firstItem="mzV-wc-pId" firstAttribute="bottom" secondItem="CPL-Oc-acL" secondAttribute="bottom" id="OS7-aY-4c2"/>
                             <constraint firstItem="XDa-OC-t8J" firstAttribute="leading" secondItem="SQ7-0R-bAK" secondAttribute="leading" id="Oh3-ID-zJ1"/>
                             <constraint firstItem="zYq-Jn-4ZA" firstAttribute="trailing" secondItem="CWz-3L-GIH" secondAttribute="trailing" id="P99-xM-8gl"/>
                             <constraint firstItem="CPL-Oc-acL" firstAttribute="trailing" secondItem="gII-mY-lt0" secondAttribute="trailing" id="Php-Ue-5sV"/>
                             <constraint firstItem="iVu-sK-quU" firstAttribute="leading" secondItem="SXu-NN-wYO" secondAttribute="leading" id="PlB-8c-GhB"/>
                             <constraint firstItem="CWz-3L-GIH" firstAttribute="trailing" secondItem="CPL-Oc-acL" secondAttribute="trailing" id="QoM-pN-xPX"/>
                             <constraint firstItem="zYq-Jn-4ZA" firstAttribute="top" secondItem="SQ7-0R-bAK" secondAttribute="top" constant="20" symbolic="YES" id="SCQ-BF-Gud"/>
+                            <constraint firstItem="P8t-n0-4cn" firstAttribute="leading" secondItem="gII-mY-lt0" secondAttribute="leading" id="UfZ-Xw-13o"/>
                             <constraint firstItem="CWz-3L-GIH" firstAttribute="top" secondItem="zYq-Jn-4ZA" secondAttribute="bottom" constant="8" symbolic="YES" id="VJK-up-g19"/>
                             <constraint firstItem="SXu-NN-wYO" firstAttribute="trailing" secondItem="iVu-sK-quU" secondAttribute="trailing" id="Wg7-I4-jfK"/>
                             <constraint firstItem="0gS-n5-Qn3" firstAttribute="top" secondItem="SXu-NN-wYO" secondAttribute="bottom" constant="9" id="YVh-HM-lFr"/>
@@ -229,11 +231,10 @@
                             <constraint firstItem="CPL-Oc-acL" firstAttribute="leading" secondItem="iVu-sK-quU" secondAttribute="leading" id="b6q-bZ-rKG"/>
                             <constraint firstItem="XDa-OC-t8J" firstAttribute="top" secondItem="Gyx-Np-wpm" secondAttribute="bottom" id="bt4-fW-cVQ"/>
                             <constraint firstItem="LB8-HY-dCx" firstAttribute="baseline" secondItem="SXu-NN-wYO" secondAttribute="firstBaseline" id="fbb-Le-yrR"/>
-                            <constraint firstItem="mzV-wc-pId" firstAttribute="leading" secondItem="CPL-Oc-acL" secondAttribute="leading" id="gIU-rm-Tnm"/>
+                            <constraint firstItem="P8t-n0-4cn" firstAttribute="centerY" secondItem="XDa-OC-t8J" secondAttribute="centerY" id="fh0-ck-PYS"/>
                             <constraint firstItem="CWz-3L-GIH" firstAttribute="leading" secondItem="zYq-Jn-4ZA" secondAttribute="leading" id="hTg-3c-7RP"/>
                             <constraint firstItem="CPL-Oc-acL" firstAttribute="bottom" secondItem="gII-mY-lt0" secondAttribute="bottom" id="jA6-5O-VJM"/>
                             <constraint firstItem="CWz-3L-GIH" firstAttribute="leading" secondItem="gII-mY-lt0" secondAttribute="leading" id="jxr-SW-DGK"/>
-                            <constraint firstItem="mzV-wc-pId" firstAttribute="top" secondItem="gII-mY-lt0" secondAttribute="top" id="pen-MC-9MZ"/>
                             <constraint firstItem="ePa-cn-0yz" firstAttribute="trailing" secondItem="CPL-Oc-acL" secondAttribute="trailing" id="sqc-wo-hTy"/>
                             <constraint firstItem="CPL-Oc-acL" firstAttribute="top" secondItem="CWz-3L-GIH" secondAttribute="bottom" constant="2" id="tKB-fv-c6L"/>
                             <constraint firstItem="SXu-NN-wYO" firstAttribute="baseline" secondItem="LB8-HY-dCx" secondAttribute="baseline" id="y5P-ZF-L6t"/>
@@ -255,7 +256,7 @@
                         <outlet property="fakeView" destination="XDa-OC-t8J" id="SJK-RX-0WW"/>
                         <outlet property="loationLabel" destination="zYq-Jn-4ZA" id="epA-4N-jVR"/>
                         <outlet property="locationAngleLabel" destination="LB8-HY-dCx" id="KSp-iO-yWe"/>
-                        <outlet property="pointer2ImageView" destination="mzV-wc-pId" id="05S-OP-WD9"/>
+                        <outlet property="pointer2ImageView" destination="P8t-n0-4cn" id="OHr-KO-s1D"/>
                         <outlet property="pointerImageView" destination="CPL-Oc-acL" id="ko9-Le-fEM"/>
                         <segue destination="o5I-5l-cey" kind="show" identifier="settingsSegue" id="l9u-Mw-heo"/>
                     </connections>

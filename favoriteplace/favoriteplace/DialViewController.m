@@ -25,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *pointer2ImageView;
 
 
+
 @end
 
 @implementation DialViewController

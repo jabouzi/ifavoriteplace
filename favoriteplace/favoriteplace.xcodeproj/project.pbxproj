@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7209C39C1BED97FD00C07AF2 /* pointer2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7209C39B1BED97FD00C07AF2 /* pointer2.png */; };
 		7209C39E1BEDA80800C07AF2 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 7209C39D1BEDA80800C07AF2 /* line.png */; };
+		7209C3A01BEDA9CF00C07AF2 /* pointer2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7209C39F1BEDA9CF00C07AF2 /* pointer2.png */; };
 		72A567641BE6439800255295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567631BE6439800255295 /* main.m */; };
 		72A567671BE6439800255295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567661BE6439800255295 /* AppDelegate.m */; };
 		72A5676D1BE6439800255295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5676B1BE6439800255295 /* Main.storyboard */; };
@@ -30,8 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7209C39B1BED97FD00C07AF2 /* pointer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer2.png; sourceTree = "<group>"; };
 		7209C39D1BEDA80800C07AF2 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
+		7209C39F1BEDA9CF00C07AF2 /* pointer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer2.png; sourceTree = "<group>"; };
 		72A5675F1BE6439800255295 /* favoriteplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = favoriteplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A567631BE6439800255295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72A567651BE6439800255295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -74,8 +74,8 @@
 		72A567561BE6439700255295 = {
 			isa = PBXGroup;
 			children = (
+				7209C39F1BEDA9CF00C07AF2 /* pointer2.png */,
 				7209C39D1BEDA80800C07AF2 /* line.png */,
-				7209C39B1BED97FD00C07AF2 /* pointer2.png */,
 				72C87A981BE984D70042B734 /* back_left.png */,
 				72C87A921BE977890042B734 /* skander_logo.png */,
 				72C87A8B1BE6ACC70042B734 /* about.png */,
@@ -193,8 +193,8 @@
 				72A5677D1BE645B500255295 /* dial.png in Resources */,
 				7209C39E1BEDA80800C07AF2 /* line.png in Resources */,
 				72A5676F1BE6439800255295 /* Assets.xcassets in Resources */,
+				7209C3A01BEDA9CF00C07AF2 /* pointer2.png in Resources */,
 				72C87A781BE66D660042B734 /* cover.png in Resources */,
-				7209C39C1BED97FD00C07AF2 /* pointer2.png in Resources */,
 				72C87A991BE984D70042B734 /* back_left.png in Resources */,
 				72A5676D1BE6439800255295 /* Main.storyboard in Resources */,
 				72C87A8E1BE6ACC70042B734 /* settings.png in Resources */,
