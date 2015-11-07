@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7209C39E1BEDA80800C07AF2 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 7209C39D1BEDA80800C07AF2 /* line.png */; };
 		7209C3A01BEDA9CF00C07AF2 /* pointer2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7209C39F1BEDA9CF00C07AF2 /* pointer2.png */; };
+		7209C3A31BEE7D4B00C07AF2 /* MyLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3A21BEE7D4B00C07AF2 /* MyLocationViewController.m */; };
+		7209C3A61BEE7D7D00C07AF2 /* FavoriteLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3A51BEE7D7D00C07AF2 /* FavoriteLocationViewController.m */; };
 		72A567641BE6439800255295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567631BE6439800255295 /* main.m */; };
 		72A567671BE6439800255295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567661BE6439800255295 /* AppDelegate.m */; };
 		72A5676D1BE6439800255295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5676B1BE6439800255295 /* Main.storyboard */; };
@@ -32,6 +34,10 @@
 /* Begin PBXFileReference section */
 		7209C39D1BEDA80800C07AF2 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		7209C39F1BEDA9CF00C07AF2 /* pointer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer2.png; sourceTree = "<group>"; };
+		7209C3A11BEE7D4B00C07AF2 /* MyLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationViewController.h; sourceTree = "<group>"; };
+		7209C3A21BEE7D4B00C07AF2 /* MyLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationViewController.m; sourceTree = "<group>"; };
+		7209C3A41BEE7D7D00C07AF2 /* FavoriteLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteLocationViewController.h; sourceTree = "<group>"; };
+		7209C3A51BEE7D7D00C07AF2 /* FavoriteLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteLocationViewController.m; sourceTree = "<group>"; };
 		72A5675F1BE6439800255295 /* favoriteplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = favoriteplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A567631BE6439800255295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72A567651BE6439800255295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -112,6 +118,10 @@
 				72C87A7D1BE66DEF0042B734 /* CoverViewController.m */,
 				72C87A8F1BE6FBEB0042B734 /* SettingsViewController.h */,
 				72C87A901BE6FBEB0042B734 /* SettingsViewController.m */,
+				7209C3A11BEE7D4B00C07AF2 /* MyLocationViewController.h */,
+				7209C3A21BEE7D4B00C07AF2 /* MyLocationViewController.m */,
+				7209C3A41BEE7D7D00C07AF2 /* FavoriteLocationViewController.h */,
+				7209C3A51BEE7D7D00C07AF2 /* FavoriteLocationViewController.m */,
 				72A5676B1BE6439800255295 /* Main.storyboard */,
 				72A5676E1BE6439800255295 /* Assets.xcassets */,
 				72A567701BE6439800255295 /* LaunchScreen.storyboard */,
@@ -213,6 +223,8 @@
 				72C87A7B1BE66DCD0042B734 /* DialViewController.m in Sources */,
 				72A567671BE6439800255295 /* AppDelegate.m in Sources */,
 				72C87A7E1BE66DEF0042B734 /* CoverViewController.m in Sources */,
+				7209C3A31BEE7D4B00C07AF2 /* MyLocationViewController.m in Sources */,
+				7209C3A61BEE7D7D00C07AF2 /* FavoriteLocationViewController.m in Sources */,
 				72A567641BE6439800255295 /* main.m in Sources */,
 				72C87A831BE66DFE0042B734 /* BottomToTopSegue.m in Sources */,
 				72C87A841BE66DFE0042B734 /* TopToBottomSegue.m in Sources */,

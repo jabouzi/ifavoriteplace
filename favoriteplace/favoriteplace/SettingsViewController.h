@@ -10,4 +10,7 @@
 
 @interface SettingsViewController : UIViewController
 
+@property(nonatomic,retain) UIViewController *locationController;
+@property(nonatomic,retain) UIViewController *favoriteController;
+
 @end
