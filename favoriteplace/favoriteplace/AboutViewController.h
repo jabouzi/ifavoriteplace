@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CustomIOSAlertView.h"
+//#import "CustomIOSAlertView.h"
 
-@interface AboutViewController : UIViewController <UITableViewDelegate, UITableViewDataSource, CustomIOSAlertViewDelegate>
+@interface AboutViewController : UIViewController
 
-@property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) UIView *alertView;
+@property (nonatomic, strong) UIAlertController *actionSheet;
+@property (nonatomic, strong) UIAlertAction *cancelAction;
+
 
 @end
