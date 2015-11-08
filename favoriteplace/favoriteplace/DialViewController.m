@@ -39,13 +39,6 @@
     self.dialMenu.delegate = self;
     
     [self.fakeView setUserInteractionEnabled:YES];
-    /*[self.pointerImageView setUserInteractionEnabled:YES];
-    [self.dialImageView setUserInteractionEnabled:YES];
-    [self.loationLabel setUserInteractionEnabled:YES];
-    [self.distanceLabel setUserInteractionEnabled:YES];
-    [self.currentAngleLabel setUserInteractionEnabled:YES];
-    [self.locationAngleLabel setUserInteractionEnabled:YES];*/
-    
     
     self.singleTapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTapGesture:)];
     self.singleTapGestureRecognizer.delegate = self;
@@ -55,12 +48,8 @@
     {
         compassQueue = dispatch_queue_create("com.skanderjabouzi.queue", NULL);
     }
-
-    
     
     self.locationManager = [[CLLocationManager alloc]  init];
-    //[self setLocationManager:locationManager];
-    
     self.locationManager.delegate = self;
     
     dispatch_async(compassQueue, ^{
@@ -78,40 +67,35 @@
         [self pointerImageView].transform = CGAffineTransformMakeRotation(radians);
         [[self locationAngleLabel] setText:[NSString stringWithFormat:@"%d",(int)degrees]];
     });
-    //NSLog(@"Magnetic Heading: %f", newHeading.magneticHeading);
 }
 
-- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item {
-    //NSLog(@"didSelectItem: %ld", (long)item.tag);
+- (void)tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item
+{
     if (item.tag == 0)
     {
         [self performSegueWithIdentifier:@"settingsSegue" sender:self];
+    }
+    else
+    {
+        [self performSegueWithIdentifier:@"aboutSegue" sender:self];
     }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
-- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
+- (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch
+{
     
-    //NSLog(@"%d", (touch.view == self.fakeView));
-    /*if (( [touch isKindOfClass:NSClassFromString(@"UIView")])) {//change it to your condition
-      NSLog(@" #UIVIEW# ");
-        
-    }*/
     if (touch.view == self.fakeView) return YES;
     return NO;
 }
 
--(void)handleSingleTapGesture:(UITapGestureRecognizer *)tapGestureRecognizer{
-    
-    
-    //self.dialMenu.delegate = self;
+-(void)handleSingleTapGesture:(UITapGestureRecognizer *)tapGestureRecognizer
+{
     if (self.dialMenu.hidden == NO)  self.dialMenu.hidden = YES;
     else self.dialMenu.hidden = NO;
-    
 }
 
 

@@ -43,6 +43,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="JC6-Yq-PDM" secondAttribute="bottom" constant="25" id="3Yx-u0-5tV"/>
                             <constraint firstItem="JC6-Yq-PDM" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BWl-Sw-AeV"/>
@@ -203,6 +204,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="LB8-HY-dCx" firstAttribute="baseline" secondItem="SXu-NN-wYO" secondAttribute="firstBaseline" id="0Cv-fQ-41z"/>
@@ -259,6 +261,7 @@
                         <outlet property="pointer2ImageView" destination="P8t-n0-4cn" id="OHr-KO-s1D"/>
                         <outlet property="pointerImageView" destination="CPL-Oc-acL" id="ko9-Le-fEM"/>
                         <segue destination="o5I-5l-cey" kind="show" identifier="settingsSegue" id="l9u-Mw-heo"/>
+                        <segue destination="wJa-7t-4qr" kind="show" identifier="aboutSegue" id="1ga-Kn-xnx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbI-ro-Nze" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -323,7 +326,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="6PS-4H-dso" firstAttribute="top" secondItem="7jk-VG-Nba" secondAttribute="bottom" constant="17" id="1g3-x3-C0T"/>
                             <constraint firstItem="6PS-4H-dso" firstAttribute="centerX" secondItem="7jk-VG-Nba" secondAttribute="centerX" id="4aH-1y-X3U"/>
@@ -514,6 +517,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZSk-DP-ozs" firstAttribute="trailing" secondItem="Guf-jS-FEF" secondAttribute="trailing" id="0bq-N7-Ccw"/>
                             <constraint firstItem="ukf-Eu-qv2" firstAttribute="leading" secondItem="ZSk-DP-ozs" secondAttribute="leading" id="0qI-dv-2SY"/>
@@ -730,6 +734,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3b5-Jd-Reo" firstAttribute="trailing" secondItem="cMR-T0-obZ" secondAttribute="trailing" id="0Wz-m4-E7A"/>
                             <constraint firstItem="HhO-ot-vBd" firstAttribute="trailing" secondItem="sKC-wF-lVQ" secondAttribute="trailing" id="3ZZ-GG-qtu"/>
@@ -765,6 +770,76 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Lv-ih-0pF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2206" y="58"/>
+        </scene>
+        <!--About View Controller-->
+        <scene sceneID="cQ6-2k-i7w">
+            <objects>
+                <viewController id="wJa-7t-4qr" customClass="AboutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zqs-VI-Lfr"/>
+                        <viewControllerLayoutGuide type="bottom" id="A6m-58-z79"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zF7-b9-p94">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pkJ-L9-kk4">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <navigationItem title="Settings" id="kLx-BK-oQn">
+                                        <barButtonItem key="leftBarButtonItem" image="Image-back" style="done" id="kwM-vV-Cav">
+                                            <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <segue destination="KTu-x9-LfT" kind="show" id="cYI-xH-9Qo"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wqe-Vl-B35">
+                                <rect key="frame" x="0.0" y="44" width="600" height="556"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2f-aA-rTf">
+                                        <rect key="frame" x="284" y="263" width="33" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Alert"/>
+                                        <connections>
+                                            <action selector="alertClicked:" destination="wJa-7t-4qr" eventType="touchUpInside" id="zN3-V8-IyC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wqe-Vl-B35" firstAttribute="top" secondItem="pkJ-L9-kk4" secondAttribute="bottom" id="P6W-9x-RgO"/>
+                            <constraint firstItem="Wqe-Vl-B35" firstAttribute="leading" secondItem="pkJ-L9-kk4" secondAttribute="leading" id="V1u-c2-EF8"/>
+                            <constraint firstItem="pkJ-L9-kk4" firstAttribute="top" secondItem="zqs-VI-Lfr" secondAttribute="bottom" id="def-e6-7e0"/>
+                            <constraint firstItem="Wqe-Vl-B35" firstAttribute="trailing" secondItem="pkJ-L9-kk4" secondAttribute="trailing" id="eFG-cl-EVE"/>
+                            <constraint firstItem="Wqe-Vl-B35" firstAttribute="bottom" secondItem="A6m-58-z79" secondAttribute="top" id="jDS-ZY-Sag"/>
+                            <constraint firstAttribute="trailing" secondItem="pkJ-L9-kk4" secondAttribute="trailing" id="kxN-mf-fra"/>
+                            <constraint firstItem="pkJ-L9-kk4" firstAttribute="leading" secondItem="zF7-b9-p94" secondAttribute="leading" id="myK-FL-bTz"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="tempView" destination="Wqe-Vl-B35" id="paE-Rw-som"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TsW-RL-ajp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <barButtonItem title="Item" id="T9W-LY-HIV"/>
+            </objects>
+            <point key="canvasLocation" x="872" y="226"/>
         </scene>
     </scenes>
     <resources>

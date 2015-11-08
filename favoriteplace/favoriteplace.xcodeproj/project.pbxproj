@@ -11,6 +11,9 @@
 		7209C3A01BEDA9CF00C07AF2 /* pointer2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7209C39F1BEDA9CF00C07AF2 /* pointer2.png */; };
 		7209C3A31BEE7D4B00C07AF2 /* MyLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3A21BEE7D4B00C07AF2 /* MyLocationViewController.m */; };
 		7209C3A61BEE7D7D00C07AF2 /* FavoriteLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3A51BEE7D7D00C07AF2 /* FavoriteLocationViewController.m */; };
+		7209C3A91BEEDECF00C07AF2 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3A81BEEDECF00C07AF2 /* AboutViewController.m */; };
+		7209C3AC1BEEF34200C07AF2 /* TableCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3AB1BEEF34200C07AF2 /* TableCellViewController.m */; };
+		7209C3AF1BEF7A9600C07AF2 /* CustomIOSAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3AE1BEF7A9600C07AF2 /* CustomIOSAlertView.m */; };
 		72A567641BE6439800255295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567631BE6439800255295 /* main.m */; };
 		72A567671BE6439800255295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567661BE6439800255295 /* AppDelegate.m */; };
 		72A5676D1BE6439800255295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5676B1BE6439800255295 /* Main.storyboard */; };
@@ -38,6 +41,12 @@
 		7209C3A21BEE7D4B00C07AF2 /* MyLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationViewController.m; sourceTree = "<group>"; };
 		7209C3A41BEE7D7D00C07AF2 /* FavoriteLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteLocationViewController.h; sourceTree = "<group>"; };
 		7209C3A51BEE7D7D00C07AF2 /* FavoriteLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteLocationViewController.m; sourceTree = "<group>"; };
+		7209C3A71BEEDECF00C07AF2 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		7209C3A81BEEDECF00C07AF2 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		7209C3AA1BEEF34200C07AF2 /* TableCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCellViewController.h; sourceTree = "<group>"; };
+		7209C3AB1BEEF34200C07AF2 /* TableCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCellViewController.m; sourceTree = "<group>"; };
+		7209C3AD1BEF7A9600C07AF2 /* CustomIOSAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomIOSAlertView.h; sourceTree = "<group>"; };
+		7209C3AE1BEF7A9600C07AF2 /* CustomIOSAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomIOSAlertView.m; sourceTree = "<group>"; };
 		72A5675F1BE6439800255295 /* favoriteplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = favoriteplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A567631BE6439800255295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72A567651BE6439800255295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +115,8 @@
 		72A567611BE6439800255295 /* favoriteplace */ = {
 			isa = PBXGroup;
 			children = (
+				7209C3AD1BEF7A9600C07AF2 /* CustomIOSAlertView.h */,
+				7209C3AE1BEF7A9600C07AF2 /* CustomIOSAlertView.m */,
 				72C87A7F1BE66DFE0042B734 /* BottomToTopSegue.h */,
 				72C87A801BE66DFE0042B734 /* BottomToTopSegue.m */,
 				72C87A811BE66DFE0042B734 /* TopToBottomSegue.h */,
@@ -122,6 +133,10 @@
 				7209C3A21BEE7D4B00C07AF2 /* MyLocationViewController.m */,
 				7209C3A41BEE7D7D00C07AF2 /* FavoriteLocationViewController.h */,
 				7209C3A51BEE7D7D00C07AF2 /* FavoriteLocationViewController.m */,
+				7209C3A71BEEDECF00C07AF2 /* AboutViewController.h */,
+				7209C3A81BEEDECF00C07AF2 /* AboutViewController.m */,
+				7209C3AA1BEEF34200C07AF2 /* TableCellViewController.h */,
+				7209C3AB1BEEF34200C07AF2 /* TableCellViewController.m */,
 				72A5676B1BE6439800255295 /* Main.storyboard */,
 				72A5676E1BE6439800255295 /* Assets.xcassets */,
 				72A567701BE6439800255295 /* LaunchScreen.storyboard */,
@@ -221,11 +236,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				72C87A7B1BE66DCD0042B734 /* DialViewController.m in Sources */,
+				7209C3AC1BEEF34200C07AF2 /* TableCellViewController.m in Sources */,
 				72A567671BE6439800255295 /* AppDelegate.m in Sources */,
 				72C87A7E1BE66DEF0042B734 /* CoverViewController.m in Sources */,
 				7209C3A31BEE7D4B00C07AF2 /* MyLocationViewController.m in Sources */,
 				7209C3A61BEE7D7D00C07AF2 /* FavoriteLocationViewController.m in Sources */,
 				72A567641BE6439800255295 /* main.m in Sources */,
+				7209C3A91BEEDECF00C07AF2 /* AboutViewController.m in Sources */,
+				7209C3AF1BEF7A9600C07AF2 /* CustomIOSAlertView.m in Sources */,
 				72C87A831BE66DFE0042B734 /* BottomToTopSegue.m in Sources */,
 				72C87A841BE66DFE0042B734 /* TopToBottomSegue.m in Sources */,
 				72C87A911BE6FBEB0042B734 /* SettingsViewController.m in Sources */,

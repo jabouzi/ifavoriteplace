@@ -9,6 +9,7 @@
 #import "CoverViewController.h"
 
 @interface CoverViewController ()
+
 @property (weak, nonatomic) IBOutlet UIImageView *coverImageView;
 
 @end
