@@ -390,6 +390,9 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 </variation>
+                                <connections>
+                                    <action selector="detectMyLocation:" destination="vf1-3q-dFg" eventType="touchUpInside" id="kQO-q9-VKo"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guf-jS-FEF">
                                 <rect key="frame" x="20" y="455" width="560" height="30"/>
@@ -408,6 +411,9 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 </variation>
+                                <connections>
+                                    <action selector="saveMyLocation:" destination="vf1-3q-dFg" eventType="touchUpInside" id="uHb-D4-aL0"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Latitude" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-tu-628">
                                 <rect key="frame" x="20" y="27" width="560" height="40"/>
@@ -545,6 +551,13 @@
                             <constraint firstItem="OC9-5h-i8F" firstAttribute="leading" secondItem="eFG-AE-9mp" secondAttribute="leading" id="ycV-hB-dlA"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="city" destination="eFG-AE-9mp" id="8vV-kj-Ie7"/>
+                        <outlet property="country" destination="OC9-5h-i8F" id="f2o-PV-Ie2"/>
+                        <outlet property="latitude" destination="cAx-tu-628" id="z8b-xw-Loe"/>
+                        <outlet property="longitude" destination="Lfe-dT-r0f" id="z4U-b5-Fof"/>
+                        <outlet property="state" destination="ukf-Eu-qv2" id="OVQ-90-1OU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lsm-VX-n9g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -607,6 +620,9 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 </variation>
+                                <connections>
+                                    <action selector="searchLocation:" destination="BD7-ba-g03" eventType="touchUpInside" id="Ndp-Wt-4fF"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Latitude" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="rUw-kQ-gX9">
                                 <rect key="frame" x="20" y="177" width="560" height="40"/>
@@ -730,6 +746,9 @@
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 </variation>
+                                <connections>
+                                    <action selector="saveLocation:" destination="BD7-ba-g03" eventType="touchUpInside" id="uN5-nG-nkD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -766,6 +785,14 @@
                             <constraint firstItem="5jv-mn-cO7" firstAttribute="trailing" secondItem="rUw-kQ-gX9" secondAttribute="trailing" id="zTI-Gc-5UI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="city" destination="9Ax-bI-by0" id="yj3-XM-F4D"/>
+                        <outlet property="country" destination="Vca-uu-PWw" id="1Kp-oZ-xuM"/>
+                        <outlet property="latitude" destination="rUw-kQ-gX9" id="bra-2L-6KT"/>
+                        <outlet property="longitude" destination="5jv-mn-cO7" id="so4-ii-v0p"/>
+                        <outlet property="search" destination="sKC-wF-lVQ" id="eJT-JE-otk"/>
+                        <outlet property="state" destination="cMR-T0-obZ" id="eYE-9C-fFM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Lv-ih-0pF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -810,7 +837,7 @@
                                     </button>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>

@@ -8,6 +8,26 @@
 
 #import "MyLocationViewController.h"
 
+@interface MyLocationViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *latitude;
+@property (weak, nonatomic) IBOutlet UITextField *longitude;
+@property (weak, nonatomic) IBOutlet UITextField *city;
+@property (weak, nonatomic) IBOutlet UITextField *country;
+@property (weak, nonatomic) IBOutlet UITextField *state;
+
+@end
+
 @implementation MyLocationViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+- (IBAction) detectMyLocation:(id)sender {
+}
+
+- (IBAction) saveMyLocation:(id)sender {
+}
 
 @end

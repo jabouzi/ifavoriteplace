@@ -8,6 +8,28 @@
 
 #import "FavoriteLocationViewController.h"
 
+@interface FavoriteLocationViewController()
+
+@property (weak, nonatomic) IBOutlet UITextField *search;
+@property (weak, nonatomic) IBOutlet UITextField *latitude;
+@property (weak, nonatomic) IBOutlet UITextField *longitude;
+@property (weak, nonatomic) IBOutlet UITextField *city;
+@property (weak, nonatomic) IBOutlet UITextField *country;
+@property (weak, nonatomic) IBOutlet UITextField *state;
+
+
+@end
+
 @implementation FavoriteLocationViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+}
+
+- (IBAction)searchLocation:(id)sender {
+}
+
+- (IBAction)saveLocation:(id)sender {
+}
 
 @end
