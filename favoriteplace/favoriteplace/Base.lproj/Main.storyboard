@@ -623,7 +623,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 </variation>
                                 <connections>
-                                    <action selector="searchLocation:" destination="BD7-ba-g03" eventType="touchUpInside" id="Ndp-Wt-4fF"/>
+                                    <action selector="searchFavorite:" destination="BD7-ba-g03" eventType="touchUpInside" id="Ce5-rf-2ZI"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Latitude" textAlignment="natural" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="rUw-kQ-gX9">
@@ -749,7 +749,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 </variation>
                                 <connections>
-                                    <action selector="saveLocation:" destination="BD7-ba-g03" eventType="touchUpInside" id="uN5-nG-nkD"/>
+                                    <action selector="saveFavorite:" destination="BD7-ba-g03" eventType="touchUpInside" id="GSL-uf-JoE"/>
                                 </connections>
                             </button>
                         </subviews>

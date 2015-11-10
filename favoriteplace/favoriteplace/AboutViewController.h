@@ -11,8 +11,4 @@
 
 @interface AboutViewController : UIViewController
 
-@property (nonatomic, strong) UIAlertController *actionSheet;
-@property (nonatomic, strong) UIAlertAction *cancelAction;
-
-
 @end
