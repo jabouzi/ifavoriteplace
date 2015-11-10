@@ -88,7 +88,12 @@
     NSArray *results = [[NSArray alloc] initWithArray:[self.dbManager loadDataFromDB:query]];
     if ([results count] > 0)
     {
+        location.locationId = [[[results objectAtIndex:0] objectAtIndex:[self.dbManager.arrColumnNames indexOfObject:@"id"]] integerValue];
         location.latitude = [[results objectAtIndex:0] objectAtIndex:[self.dbManager.arrColumnNames indexOfObject:@"latitude"]];
+        location.longitude = [[results objectAtIndex:0] objectAtIndex:[self.dbManager.arrColumnNames indexOfObject:@"longitude"]];
+        location.city = [[results objectAtIndex:0] objectAtIndex:[self.dbManager.arrColumnNames indexOfObject:@"city"]];
+        location.country = [[results objectAtIndex:0] objectAtIndex:[self.dbManager.arrColumnNames indexOfObject:@"country"]];
+        location.state = [[results objectAtIndex:0] objectAtIndex:[self.dbManager.arrColumnNames indexOfObject:@"state"]];
     }
     
     return location;
@@ -97,7 +102,7 @@
 -(int) getLocationCount
 {
     int count = 0;
-    NSString *query = @"select count(*) as count from users";
+    NSString *query = @"select count(*) as count from location";
     NSLog(@"%@", query);
     
     NSArray *results = [[NSArray alloc] initWithArray:[self.dbManager loadDataFromDB:query]];

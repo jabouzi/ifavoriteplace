@@ -12,13 +12,14 @@
 		7209C3A31BEE7D4B00C07AF2 /* MyLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3A21BEE7D4B00C07AF2 /* MyLocationViewController.m */; };
 		7209C3A61BEE7D7D00C07AF2 /* FavoriteLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3A51BEE7D7D00C07AF2 /* FavoriteLocationViewController.m */; };
 		7209C3A91BEEDECF00C07AF2 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3A81BEEDECF00C07AF2 /* AboutViewController.m */; };
-		7209C3B11BF0294800C07AF2 /* favoriteplace.db in Resources */ = {isa = PBXBuildFile; fileRef = 7209C3B01BF0294800C07AF2 /* favoriteplace.db */; };
 		7209C3B41BF0295300C07AF2 /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3B31BF0295300C07AF2 /* DBManager.m */; };
 		7209C3B71BF0297500C07AF2 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3B61BF0297500C07AF2 /* Location.m */; };
 		7209C3BA1BF0298A00C07AF2 /* Favorite.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3B91BF0298A00C07AF2 /* Favorite.m */; };
 		7209C3BD1BF029AB00C07AF2 /* LocationDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3BC1BF029AB00C07AF2 /* LocationDataSource.m */; };
 		7209C3C01BF029C200C07AF2 /* FavoriteDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3BF1BF029C200C07AF2 /* FavoriteDataSource.m */; };
 		7209C3C61BF02FB400C07AF2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7209C3C51BF02FB400C07AF2 /* libsqlite3.tbd */; };
+		7209C3C81BF18A0300C07AF2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7209C3C71BF18A0300C07AF2 /* CoreLocation.framework */; };
+		7209C3CA1BF19D9500C07AF2 /* favoriteplace.db in Resources */ = {isa = PBXBuildFile; fileRef = 7209C3C91BF19D9500C07AF2 /* favoriteplace.db */; };
 		72A567641BE6439800255295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567631BE6439800255295 /* main.m */; };
 		72A567671BE6439800255295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567661BE6439800255295 /* AppDelegate.m */; };
 		72A5676D1BE6439800255295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5676B1BE6439800255295 /* Main.storyboard */; };
@@ -48,7 +49,6 @@
 		7209C3A51BEE7D7D00C07AF2 /* FavoriteLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteLocationViewController.m; sourceTree = "<group>"; };
 		7209C3A71BEEDECF00C07AF2 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		7209C3A81BEEDECF00C07AF2 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
-		7209C3B01BF0294800C07AF2 /* favoriteplace.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = favoriteplace.db; sourceTree = "<group>"; };
 		7209C3B21BF0295300C07AF2 /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		7209C3B31BF0295300C07AF2 /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		7209C3B51BF0297500C07AF2 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
@@ -60,6 +60,8 @@
 		7209C3BE1BF029C200C07AF2 /* FavoriteDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteDataSource.h; sourceTree = "<group>"; };
 		7209C3BF1BF029C200C07AF2 /* FavoriteDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteDataSource.m; sourceTree = "<group>"; };
 		7209C3C51BF02FB400C07AF2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		7209C3C71BF18A0300C07AF2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7209C3C91BF19D9500C07AF2 /* favoriteplace.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = favoriteplace.db; sourceTree = "<group>"; };
 		72A5675F1BE6439800255295 /* favoriteplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = favoriteplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A567631BE6439800255295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72A567651BE6439800255295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7209C3C81BF18A0300C07AF2 /* CoreLocation.framework in Frameworks */,
 				7209C3C61BF02FB400C07AF2 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,8 +106,9 @@
 		72A567561BE6439700255295 = {
 			isa = PBXGroup;
 			children = (
+				7209C3C91BF19D9500C07AF2 /* favoriteplace.db */,
+				7209C3C71BF18A0300C07AF2 /* CoreLocation.framework */,
 				7209C3C51BF02FB400C07AF2 /* libsqlite3.tbd */,
-				7209C3B01BF0294800C07AF2 /* favoriteplace.db */,
 				7209C39F1BEDA9CF00C07AF2 /* pointer2.png */,
 				7209C39D1BEDA80800C07AF2 /* line.png */,
 				72C87A981BE984D70042B734 /* back_left.png */,
@@ -237,7 +241,7 @@
 				72A567721BE6439800255295 /* LaunchScreen.storyboard in Resources */,
 				72C87A931BE977890042B734 /* skander_logo.png in Resources */,
 				72C87A8A1BE677400042B734 /* icon.png in Resources */,
-				7209C3B11BF0294800C07AF2 /* favoriteplace.db in Resources */,
+				7209C3CA1BF19D9500C07AF2 /* favoriteplace.db in Resources */,
 				72A5677D1BE645B500255295 /* dial.png in Resources */,
 				7209C39E1BEDA80800C07AF2 /* line.png in Resources */,
 				72A5676F1BE6439800255295 /* Assets.xcassets in Resources */,

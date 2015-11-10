@@ -191,6 +191,8 @@
                                             <tabBarItem title="Settings" image="settings.png" id="6b1-E8-r3p"/>
                                             <tabBarItem tag="1" title="About" image="about.png" id="2E5-SW-7dU"/>
                                         </items>
+                                        <color key="tintColor" red="0.55686274509803924" green="0.396078431372549" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="selectedImageTintColor" red="0.5568627451" green="0.39607843139999999" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                     </tabBar>
                                 </subviews>
                                 <animations/>
@@ -415,7 +417,7 @@
                                     <action selector="saveMyLocation:" destination="vf1-3q-dFg" eventType="touchUpInside" id="uHb-D4-aL0"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Latitude" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-tu-628">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Latitude" textAlignment="natural" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="cAx-tu-628">
                                 <rect key="frame" x="20" y="27" width="560" height="40"/>
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -429,14 +431,14 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Longitude" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="Lfe-dT-r0f">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Longitude" textAlignment="natural" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="Lfe-dT-r0f">
                                 <rect key="frame" x="20" y="67" width="560" height="40"/>
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -450,14 +452,14 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="City" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="eFG-AE-9mp">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="City" textAlignment="natural" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="eFG-AE-9mp">
                                 <rect key="frame" x="20" y="107" width="560" height="40"/>
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -471,14 +473,14 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Country" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="OC9-5h-i8F">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Country" textAlignment="natural" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="OC9-5h-i8F">
                                 <rect key="frame" x="20" y="147" width="560" height="40"/>
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -492,14 +494,14 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="State" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="ukf-Eu-qv2">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="State" textAlignment="natural" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="ukf-Eu-qv2">
                                 <rect key="frame" x="20" y="187" width="560" height="40"/>
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -513,7 +515,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -582,7 +584,7 @@
                                     <constraint firstAttribute="height" constant="8" id="kvg-b4-S3O"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="sKC-wF-lVQ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Search" textAlignment="natural" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="sKC-wF-lVQ">
                                 <rect key="frame" x="20" y="27" width="560" height="40"/>
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -596,7 +598,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -624,7 +626,7 @@
                                     <action selector="searchLocation:" destination="BD7-ba-g03" eventType="touchUpInside" id="Ndp-Wt-4fF"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Latitude" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="rUw-kQ-gX9">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Latitude" textAlignment="natural" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="rUw-kQ-gX9">
                                 <rect key="frame" x="20" y="177" width="560" height="40"/>
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -638,14 +640,14 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Longitude" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="5jv-mn-cO7">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Longitude" textAlignment="natural" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="5jv-mn-cO7">
                                 <rect key="frame" x="20" y="217" width="560" height="40"/>
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -659,14 +661,14 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="City" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="9Ax-bI-by0">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="City" textAlignment="natural" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="9Ax-bI-by0">
                                 <rect key="frame" x="20" y="257" width="560" height="40"/>
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -680,14 +682,14 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Country" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="Vca-uu-PWw">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="Country" textAlignment="natural" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="Vca-uu-PWw">
                                 <rect key="frame" x="20" y="297" width="560" height="40"/>
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -701,14 +703,14 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="heightClass=regular-widthClass=regular">
                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="State" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="cMR-T0-obZ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="State" textAlignment="natural" minimumFontSize="17" background="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="cMR-T0-obZ">
                                 <rect key="frame" x="20" y="337" width="560" height="40"/>
                                 <animations/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -722,7 +724,7 @@
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
-                                        <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <variation key="heightClass=regular-widthClass=regular">
@@ -766,7 +768,6 @@
                             <constraint firstItem="5jv-mn-cO7" firstAttribute="top" secondItem="rUw-kQ-gX9" secondAttribute="bottom" id="Eaq-MY-60V"/>
                             <constraint firstItem="HhO-ot-vBd" firstAttribute="leading" secondItem="sKC-wF-lVQ" secondAttribute="leading" id="Kq1-dr-aDs"/>
                             <constraint firstItem="HhO-ot-vBd" firstAttribute="top" secondItem="jBq-xq-KFe" secondAttribute="bottom" constant="80" id="LR2-E2-OAp"/>
-                            <constraint firstItem="jBq-xq-KFe" firstAttribute="top" secondItem="sF0-uP-INV" secondAttribute="bottom" id="N55-qL-beI"/>
                             <constraint firstItem="sKC-wF-lVQ" firstAttribute="leading" secondItem="jBq-xq-KFe" secondAttribute="leading" id="OE0-YM-1vT"/>
                             <constraint firstItem="9Ax-bI-by0" firstAttribute="leading" secondItem="Vca-uu-PWw" secondAttribute="leading" id="QxC-GR-vv5"/>
                             <constraint firstItem="rUw-kQ-gX9" firstAttribute="top" secondItem="HhO-ot-vBd" secondAttribute="bottom" constant="39" id="TB1-NS-1h1"/>
