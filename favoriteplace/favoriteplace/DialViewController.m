@@ -33,7 +33,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    double direction = 58 * M_PI / 180;
+    self.favoriteDataSource = [[FavoriteDataSource alloc] init];
+    self.locationDataSource = [[LocationDataSource alloc] init];
+    self.location = [[Location alloc] init];
+    self.favorite = [[Favorite alloc] init];
+    self.geoCalculations = [[GeoCalculations alloc] init];
+    
+    self.favorite = [self.favoriteDataSource getFavorite:1];
+    self.location = [self.locationDataSource getLocation:1];
+    
+    self.heading = [self.geoCalculations getHeading:[self.favorite.latitude floatValue] :[self.favorite.longitude floatValue] :[self.location.latitude floatValue] :[self.location.longitude floatValue]];
+    self.distance = [self.geoCalculations getDistance:[self.favorite.latitude floatValue] :[self.favorite.longitude floatValue] :[self.location.latitude floatValue] :[self.location.longitude floatValue]];
+    
+    [self setTextFieds];
+    
+    NSLog(@" Heading %f, Distance %f", self.heading, self.distance);
+    
+    double direction = (int)self.heading * M_PI / 180;
     [self pointer2ImageView].transform = CGAffineTransformMakeRotation(direction);
     
     self.dialMenu.delegate = self;
@@ -59,13 +75,21 @@
     });
 }
 
+
+-(void) setTextFieds
+{
+    [self.loationLabel setText:[NSString stringWithFormat:@"%@ %@ %@", self.favorite.city, self.favorite.state, self.favorite.country]];
+    [self.distanceLabel setText:[NSString stringWithFormat:@"Distance %d KM", (int)self.distance]];
+    [self.currentAngleLabel setText:[NSString stringWithFormat:@"%d˚", (int)self.heading]];
+}
+
 - (void) locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
 {
     dispatch_async(dispatch_get_main_queue(), ^{
         double degrees = newHeading.magneticHeading;
         double radians = degrees * M_PI / 180;
         [self pointerImageView].transform = CGAffineTransformMakeRotation(radians);
-        [[self locationAngleLabel] setText:[NSString stringWithFormat:@"%d",(int)degrees]];
+        [[self locationAngleLabel] setText:[NSString stringWithFormat:@"%d˚",(int)degrees]];
     });
 }
 

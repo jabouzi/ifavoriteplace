@@ -20,6 +20,7 @@
 		7209C3C61BF02FB400C07AF2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7209C3C51BF02FB400C07AF2 /* libsqlite3.tbd */; };
 		7209C3C81BF18A0300C07AF2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7209C3C71BF18A0300C07AF2 /* CoreLocation.framework */; };
 		7209C3CA1BF19D9500C07AF2 /* favoriteplace.db in Resources */ = {isa = PBXBuildFile; fileRef = 7209C3C91BF19D9500C07AF2 /* favoriteplace.db */; };
+		7209C3CD1BF2D8B900C07AF2 /* GeoCalculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3CC1BF2D8B900C07AF2 /* GeoCalculations.m */; };
 		72A567641BE6439800255295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567631BE6439800255295 /* main.m */; };
 		72A567671BE6439800255295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567661BE6439800255295 /* AppDelegate.m */; };
 		72A5676D1BE6439800255295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5676B1BE6439800255295 /* Main.storyboard */; };
@@ -62,6 +63,8 @@
 		7209C3C51BF02FB400C07AF2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		7209C3C71BF18A0300C07AF2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7209C3C91BF19D9500C07AF2 /* favoriteplace.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = favoriteplace.db; sourceTree = "<group>"; };
+		7209C3CB1BF2D8B900C07AF2 /* GeoCalculations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoCalculations.h; sourceTree = "<group>"; };
+		7209C3CC1BF2D8B900C07AF2 /* GeoCalculations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoCalculations.m; sourceTree = "<group>"; };
 		72A5675F1BE6439800255295 /* favoriteplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = favoriteplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A567631BE6439800255295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72A567651BE6439800255295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 				7209C3A21BEE7D4B00C07AF2 /* MyLocationViewController.m */,
 				72C87A901BE6FBEB0042B734 /* SettingsViewController.m */,
 				72C87A821BE66DFE0042B734 /* TopToBottomSegue.m */,
+				7209C3CB1BF2D8B900C07AF2 /* GeoCalculations.h */,
+				7209C3CC1BF2D8B900C07AF2 /* GeoCalculations.m */,
 				72A567731BE6439800255295 /* Info.plist */,
 				72A5676E1BE6439800255295 /* Assets.xcassets */,
 				72A567701BE6439800255295 /* LaunchScreen.storyboard */,
@@ -271,6 +276,7 @@
 				72A567641BE6439800255295 /* main.m in Sources */,
 				7209C3A91BEEDECF00C07AF2 /* AboutViewController.m in Sources */,
 				7209C3B41BF0295300C07AF2 /* DBManager.m in Sources */,
+				7209C3CD1BF2D8B900C07AF2 /* GeoCalculations.m in Sources */,
 				72C87A831BE66DFE0042B734 /* BottomToTopSegue.m in Sources */,
 				72C87A841BE66DFE0042B734 /* TopToBottomSegue.m in Sources */,
 				7209C3BA1BF0298A00C07AF2 /* Favorite.m in Sources */,
