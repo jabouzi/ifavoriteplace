@@ -12,17 +12,16 @@
 
 -(float) getHeading:(float)flatitude :(float)flongitude :(float)llatitude :(float)llongitude
 {
+    float x1 = sin((-llongitude+flongitude)*M_PI/180);
+    float y1 = cos(llatitude*M_PI/180) * tan(flatitude*M_PI/180);
+    float y2 = sin(llatitude*M_PI/180) * cos((-llongitude+flongitude)*M_PI/180);
+    float dial_angle = atan(x1/(y1-y2))*180/M_PI;
+    if (dial_angle < 0) dial_angle = 360 + dial_angle;
     
-    float x1 = (float)sin((-llongitude+flongitude)*M_PI/180.0);
-    float y1 = (float)cos(llatitude*M_PI/180.0) * (float)tan(flongitude*M_PI/180.0);
-    float y2 = (float)sin(llatitude*M_PI/180.0) * (float)cos((-llongitude+flongitude)*M_PI/180.0);
-    float dial_angle = (float)atan(x1/(y1-y2))*180.0/(float)M_PI;
-    if (dial_angle < 0) dial_angle = 360.0f + dial_angle;
-    
-    if ((llongitude < flongitude) && (llongitude > flongitude-180.0)) {
-        if (dial_angle > 180.0) dial_angle = dial_angle - 180.0;
+    if ((llongitude < flongitude) && (llongitude > flongitude-180)) {
+        if (dial_angle > 180) dial_angle = dial_angle - 180;
     }
-    if (dial_angle > 360.0) dial_angle = dial_angle - 360.0;
+    if (dial_angle > 360) dial_angle = dial_angle - 360;
     return dial_angle;
 }
 
