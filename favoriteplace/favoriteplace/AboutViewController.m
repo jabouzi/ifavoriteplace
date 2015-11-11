@@ -23,13 +23,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    array = @[@"Skander1, Montreal h1p2l3", @"Skander2, Montreal h2k2m5", @"Skander3", @"Skander4", @"Skander5"];
-    
-}
-
-- (IBAction)alertClicked:(id)sender {
- 
 }
 
 
