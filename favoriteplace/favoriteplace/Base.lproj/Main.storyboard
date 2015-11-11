@@ -196,6 +196,7 @@
                                     </tabBar>
                                 </subviews>
                                 <animations/>
+                                <color key="tintColor" red="0.55686274509803924" green="0.396078431372549" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="PrP-YT-6dT" firstAttribute="leading" secondItem="XDa-OC-t8J" secondAttribute="leading" id="MDb-Yp-ItU"/>
@@ -328,7 +329,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.55686274509803924" green="0.396078431372549" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6PS-4H-dso" firstAttribute="top" secondItem="7jk-VG-Nba" secondAttribute="bottom" constant="17" id="1g3-x3-C0T"/>
                             <constraint firstItem="6PS-4H-dso" firstAttribute="centerX" secondItem="7jk-VG-Nba" secondAttribute="centerX" id="4aH-1y-X3U"/>

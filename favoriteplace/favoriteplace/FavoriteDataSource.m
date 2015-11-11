@@ -26,7 +26,7 @@
     favorite.state = [favorite.state stringByReplacingOccurrencesOfString:@"'" withString:@"''"];
     
     
-    NSString *query = [NSString stringWithFormat:@"insert into favorite (id, latitude, longitude, country, city, state) values ('%d', '%@', '%@', '%@', '%@', '%@');",favorite.favoriteId, favorite.latitude, favorite.longitude, favorite.city, favorite.country, favorite.state];
+    NSString *query = [NSString stringWithFormat:@"insert into favorite (id, latitude, longitude, city, country, state) values ('%d', '%@', '%@', '%@', '%@', '%@');",favorite.favoriteId, favorite.latitude, favorite.longitude, favorite.city, favorite.country, favorite.state];
     
     NSLog(@"%@", query);
     
@@ -50,13 +50,14 @@
     favorite.state = [favorite.state stringByReplacingOccurrencesOfString:@"'" withString:@"''"];
     
     
-    NSString *query = [NSString stringWithFormat:@"update favorite set latitude = '%@', longitude = '%@', country = '%@', city = '%@', state = '%@' where id = %d;", favorite.latitude, favorite.longitude, favorite.city, favorite.country, favorite.state, favorite.favoriteId];
+    NSString *query = [NSString stringWithFormat:@"update favorite set latitude = '%@', longitude = '%@', city = '%@', country = '%@', state = '%@' where id = %d;", favorite.latitude, favorite.longitude, favorite.city, favorite.country, favorite.state, favorite.favoriteId];
     
     NSLog(@"%@", query);
     
     [self.dbManager executeQuery:query];
     
     if (self.dbManager.affectedRows != 0) {
+        NSLog(@"%d", self.dbManager.affectedRows);
         return 1;
     }
     else{
@@ -88,7 +89,12 @@
     NSArray *results = [[NSArray alloc] initWithArray:[self.dbManager loadDataFromDB:query]];
     if ([results count] > 0)
     {
+        favorite.favoriteId = [[[results objectAtIndex:0] objectAtIndex:[self.dbManager.arrColumnNames indexOfObject:@"id"]] integerValue];
         favorite.latitude = [[results objectAtIndex:0] objectAtIndex:[self.dbManager.arrColumnNames indexOfObject:@"latitude"]];
+        favorite.longitude = [[results objectAtIndex:0] objectAtIndex:[self.dbManager.arrColumnNames indexOfObject:@"longitude"]];
+        favorite.city = [[results objectAtIndex:0] objectAtIndex:[self.dbManager.arrColumnNames indexOfObject:@"city"]];
+        favorite.country = [[results objectAtIndex:0] objectAtIndex:[self.dbManager.arrColumnNames indexOfObject:@"country"]];
+        favorite.state = [[results objectAtIndex:0] objectAtIndex:[self.dbManager.arrColumnNames indexOfObject:@"state"]];
     }
     
     return favorite;
@@ -97,7 +103,7 @@
 -(int) getFavoriteCount
 {
     int count = 0;
-    NSString *query = @"select count(*) as count from users";
+    NSString *query = @"select count(*) as count from favorite";
     NSLog(@"%@", query);
     
     NSArray *results = [[NSArray alloc] initWithArray:[self.dbManager loadDataFromDB:query]];

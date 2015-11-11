@@ -26,9 +26,9 @@
     location.state = [location.state stringByReplacingOccurrencesOfString:@"'" withString:@"''"];
     
     
-    NSString *query = [NSString stringWithFormat:@"insert into location (id, latitude, longitude, country, city, state) values ('%d', '%@', '%@', '%@', '%@', '%@');",location.locationId, location.latitude, location.longitude, location.city, location.country, location.state];
+    NSString *query = [NSString stringWithFormat:@"insert into location (id, latitude, longitude, city, country, state) values ('%d', '%@', '%@', '%@', '%@', '%@');",location.locationId, location.latitude, location.longitude, location.city, location.country, location.state];
     
-    NSLog(@"%@", query);
+    //NSLog(@"%@", query);
     
     [self.dbManager executeQuery:query];
     
@@ -50,9 +50,9 @@
     location.state = [location.state stringByReplacingOccurrencesOfString:@"'" withString:@"''"];
     
     
-    NSString *query = [NSString stringWithFormat:@"update location set latitude = '%@', longitude = '%@', country = '%@', city = '%@', state = '%@' where id = %d;", location.latitude, location.longitude, location.city, location.country, location.state, location.locationId];
-    
-    NSLog(@"%@", query);
+    NSString *query = [NSString stringWithFormat:@"update location set latitude = '%@', longitude = '%@', city = '%@', country = '%@', state = '%@' where id = %d;", location.latitude, location.longitude, location.city, location.country, location.state, location.locationId];
+
+    //NSLog(@"%@", query);
     
     [self.dbManager executeQuery:query];
     
@@ -83,7 +83,7 @@
 {
     Location *location = [[Location alloc] init];
     NSString *query = [NSString stringWithFormat:@"select * from location where id = '%d';", locationId];
-    NSLog(@"%@", query);
+    //NSLog(@"%@", query);
     
     NSArray *results = [[NSArray alloc] initWithArray:[self.dbManager loadDataFromDB:query]];
     if ([results count] > 0)
@@ -103,7 +103,7 @@
 {
     int count = 0;
     NSString *query = @"select count(*) as count from location";
-    NSLog(@"%@", query);
+    //NSLog(@"%@", query);
     
     NSArray *results = [[NSArray alloc] initWithArray:[self.dbManager loadDataFromDB:query]];
     if ([results count] > 0)

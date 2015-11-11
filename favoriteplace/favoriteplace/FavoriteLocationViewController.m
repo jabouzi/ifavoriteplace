@@ -30,6 +30,7 @@
     self.favoriteDataSource = [[FavoriteDataSource alloc] init];
     self.favorite = [[Favorite alloc] init];
     
+    
     self.count = self.favoriteDataSource.getFavoriteCount;
     NSLog(@" COUNT : %d", self.count);
     if (self.count > 0)
@@ -89,8 +90,28 @@
 
 }
 
-- (IBAction)saveFavorite:(id)sender {
+- (IBAction)saveFavorite:(id)sender
+{
+    [[self favorite] setFavoriteId:1];
+    [[self favorite] setLatitude:[[self latitude] text]];
+    [[self favorite] setLongitude:[[self longitude] text]];
+    [[self favorite] setCity:[[self city] text]];
+    [[self favorite] setCountry:[[self country] text]];
+    [[self favorite] setState:[[self state] text]];
     
+    if (self.count > 0)
+    {
+        
+        [self.favoriteDataSource updateFavorite:self.favorite];
+    }
+    else
+    {
+        [self.favoriteDataSource addFavorite:self.favorite];
+        self.count = self.favoriteDataSource.getFavoriteCount;
+        NSLog(@" %d, %@", self.count, [self.favoriteDataSource getFavorite:1]);
+    }
+    NSLog(@"saveMyLocation");
+
 }
 
 
@@ -116,6 +137,7 @@
                                  [[self city] setText:[actionName locality]];
                                  [[self country] setText:[actionName country]];
                                  [[self state] setText:[actionName administrativeArea]];
+                                 [[self search] setText:nil];
                              }];
         [self.actionSheet addAction:self.cancelAction];
     }
