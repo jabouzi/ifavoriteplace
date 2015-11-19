@@ -35,9 +35,7 @@
 		724F81731BFD4603006C13FD /* pointer2_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81611BFD4603006C13FD /* pointer2_x1.png */; };
 		724F81741BFD4603006C13FD /* pointer2_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81621BFD4603006C13FD /* pointer2_x2.png */; };
 		724F81751BFD4603006C13FD /* pointer2_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81631BFD4603006C13FD /* pointer2_x3.png */; };
-		724F81761BFD4603006C13FD /* skander_logo_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81641BFD4603006C13FD /* skander_logo_x1.png */; };
-		724F81771BFD4603006C13FD /* skander_logo_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81651BFD4603006C13FD /* skander_logo_x2.png */; };
-		724F81781BFD4603006C13FD /* skander_logo_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81661BFD4603006C13FD /* skander_logo_x3.png */; };
+		724F817A1BFD77E1006C13FD /* skander_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81791BFD77E1006C13FD /* skander_logo.png */; };
 		72A567641BE6439800255295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567631BE6439800255295 /* main.m */; };
 		72A567671BE6439800255295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567661BE6439800255295 /* AppDelegate.m */; };
 		72A5676D1BE6439800255295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5676B1BE6439800255295 /* Main.storyboard */; };
@@ -91,9 +89,7 @@
 		724F81611BFD4603006C13FD /* pointer2_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer2_x1.png; sourceTree = "<group>"; };
 		724F81621BFD4603006C13FD /* pointer2_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer2_x2.png; sourceTree = "<group>"; };
 		724F81631BFD4603006C13FD /* pointer2_x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer2_x3.png; sourceTree = "<group>"; };
-		724F81641BFD4603006C13FD /* skander_logo_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skander_logo_x1.png; sourceTree = "<group>"; };
-		724F81651BFD4603006C13FD /* skander_logo_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skander_logo_x2.png; sourceTree = "<group>"; };
-		724F81661BFD4603006C13FD /* skander_logo_x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skander_logo_x3.png; sourceTree = "<group>"; };
+		724F81791BFD77E1006C13FD /* skander_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skander_logo.png; sourceTree = "<group>"; };
 		72A5675F1BE6439800255295 /* favoriteplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = favoriteplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A567631BE6439800255295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72A567651BE6439800255295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,6 +129,7 @@
 		72A567561BE6439700255295 = {
 			isa = PBXGroup;
 			children = (
+				724F81791BFD77E1006C13FD /* skander_logo.png */,
 				724F81551BFD4603006C13FD /* cover_x1.png */,
 				724F81561BFD4603006C13FD /* cover_x2.png */,
 				724F81571BFD4603006C13FD /* cover_x3.png */,
@@ -148,9 +145,6 @@
 				724F81611BFD4603006C13FD /* pointer2_x1.png */,
 				724F81621BFD4603006C13FD /* pointer2_x2.png */,
 				724F81631BFD4603006C13FD /* pointer2_x3.png */,
-				724F81641BFD4603006C13FD /* skander_logo_x1.png */,
-				724F81651BFD4603006C13FD /* skander_logo_x2.png */,
-				724F81661BFD4603006C13FD /* skander_logo_x3.png */,
 				7209C3C91BF19D9500C07AF2 /* favoriteplace.db */,
 				7209C3C71BF18A0300C07AF2 /* CoreLocation.framework */,
 				7209C3C51BF02FB400C07AF2 /* libsqlite3.tbd */,
@@ -285,14 +279,12 @@
 				7209C3CA1BF19D9500C07AF2 /* favoriteplace.db in Resources */,
 				7209C39E1BEDA80800C07AF2 /* line.png in Resources */,
 				72A5676F1BE6439800255295 /* Assets.xcassets in Resources */,
-				724F81781BFD4603006C13FD /* skander_logo_x3.png in Resources */,
 				724F816A1BFD4603006C13FD /* dial_x1.png in Resources */,
 				724F81671BFD4603006C13FD /* cover_x1.png in Resources */,
 				724F81711BFD4603006C13FD /* pointer_x2.png in Resources */,
 				724F81721BFD4603006C13FD /* pointer_x3.png in Resources */,
 				724F816B1BFD4603006C13FD /* dial_x2.png in Resources */,
 				724F81681BFD4603006C13FD /* cover_x2.png in Resources */,
-				724F81771BFD4603006C13FD /* skander_logo_x2.png in Resources */,
 				72C87A991BE984D70042B734 /* back_left.png in Resources */,
 				72A5676D1BE6439800255295 /* Main.storyboard in Resources */,
 				724F816D1BFD4603006C13FD /* icon_x1.png in Resources */,
@@ -300,10 +292,10 @@
 				724F816C1BFD4603006C13FD /* dial_x3.png in Resources */,
 				72C87A8E1BE6ACC70042B734 /* settings.png in Resources */,
 				724F81701BFD4603006C13FD /* pointer_x1.png in Resources */,
+				724F817A1BFD77E1006C13FD /* skander_logo.png in Resources */,
 				724F81691BFD4603006C13FD /* cover_x3.png in Resources */,
 				724F816F1BFD4603006C13FD /* icon_x3.png in Resources */,
 				72C87A8D1BE6ACC70042B734 /* about.png in Resources */,
-				724F81761BFD4603006C13FD /* skander_logo_x1.png in Resources */,
 				724F81751BFD4603006C13FD /* pointer2_x3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
