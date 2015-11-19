@@ -366,7 +366,7 @@
                         <viewControllerLayoutGuide type="bottom" id="5Fa-My-dsA"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kvi-4Z-bBz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="493"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-line" translatesAutoresizingMaskIntoConstraints="NO" id="YVP-56-Yel">
@@ -376,7 +376,7 @@
                                     <constraint firstAttribute="height" constant="8" id="Cs1-0N-L7K"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSk-DP-ozs">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZSk-DP-ozs">
                                 <rect key="frame" x="20" y="417" width="560" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.3843137254901961" green="0.29019607843137257" blue="0.15294117647058825" alpha="1" colorSpace="calibratedRGB"/>
@@ -397,7 +397,7 @@
                                     <action selector="detectMyLocation:" destination="vf1-3q-dFg" eventType="touchUpInside" id="kQO-q9-VKo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guf-jS-FEF">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Guf-jS-FEF">
                                 <rect key="frame" x="20" y="455" width="560" height="30"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.38431372549999998" green="0.2901960784" blue="0.1529411765" alpha="1" colorSpace="calibratedRGB"/>
@@ -829,7 +829,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wqe-Vl-B35">
                                 <rect key="frame" x="0.0" y="44" width="600" height="556"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dial.png" translatesAutoresizingMaskIntoConstraints="NO" id="dPq-eB-Ai5">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Image-dial" translatesAutoresizingMaskIntoConstraints="NO" id="dPq-eB-Ai5">
                                         <rect key="frame" x="200" y="43" width="200" height="200"/>
                                         <animations/>
                                         <constraints>
@@ -840,7 +840,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="This application is made by Skander Jabouzi www.skanderjabouzi.com © 2015" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="D4s-MF-QYB">
                                         <rect key="frame" x="8" y="276" width="584" height="230"/>
                                         <animations/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -850,7 +850,7 @@
                                     </textView>
                                 </subviews>
                                 <animations/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="D4s-MF-QYB" firstAttribute="top" secondItem="dPq-eB-Ai5" secondAttribute="bottom" constant="33" id="Mwt-ry-Xde"/>
@@ -863,7 +863,7 @@
                             </view>
                         </subviews>
                         <animations/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.55686274509803924" green="0.396078431372549" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Wqe-Vl-B35" firstAttribute="leading" secondItem="zF7-b9-p94" secondAttribute="leading" id="72N-fZ-8II"/>
@@ -892,13 +892,12 @@
     </scenes>
     <resources>
         <image name="Image-back" width="16" height="29"/>
-        <image name="Image-cover" width="910" height="910"/>
-        <image name="Image-dial" width="880" height="880"/>
+        <image name="Image-cover" width="300" height="300"/>
+        <image name="Image-dial" width="300" height="300"/>
         <image name="Image-line" width="91" height="33"/>
-        <image name="Image-pointer" width="880" height="880"/>
-        <image name="Image-pointer2" width="880" height="880"/>
+        <image name="Image-pointer" width="300" height="300"/>
+        <image name="Image-pointer2" width="300" height="300"/>
         <image name="about.png" width="16" height="32"/>
-        <image name="dial.png" width="2642" height="2641"/>
         <image name="settings.png" width="32" height="32"/>
     </resources>
     <inferredMetricsTieBreakers>

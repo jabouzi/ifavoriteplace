@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7209C39E1BEDA80800C07AF2 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 7209C39D1BEDA80800C07AF2 /* line.png */; };
-		7209C3A01BEDA9CF00C07AF2 /* pointer2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7209C39F1BEDA9CF00C07AF2 /* pointer2.png */; };
 		7209C3A31BEE7D4B00C07AF2 /* MyLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3A21BEE7D4B00C07AF2 /* MyLocationViewController.m */; };
 		7209C3A61BEE7D7D00C07AF2 /* FavoriteLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3A51BEE7D7D00C07AF2 /* FavoriteLocationViewController.m */; };
 		7209C3A91BEEDECF00C07AF2 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3A81BEEDECF00C07AF2 /* AboutViewController.m */; };
@@ -21,29 +20,41 @@
 		7209C3C81BF18A0300C07AF2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7209C3C71BF18A0300C07AF2 /* CoreLocation.framework */; };
 		7209C3CA1BF19D9500C07AF2 /* favoriteplace.db in Resources */ = {isa = PBXBuildFile; fileRef = 7209C3C91BF19D9500C07AF2 /* favoriteplace.db */; };
 		7209C3CD1BF2D8B900C07AF2 /* GeoCalculations.m in Sources */ = {isa = PBXBuildFile; fileRef = 7209C3CC1BF2D8B900C07AF2 /* GeoCalculations.m */; };
+		724F81671BFD4603006C13FD /* cover_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81551BFD4603006C13FD /* cover_x1.png */; };
+		724F81681BFD4603006C13FD /* cover_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81561BFD4603006C13FD /* cover_x2.png */; };
+		724F81691BFD4603006C13FD /* cover_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81571BFD4603006C13FD /* cover_x3.png */; };
+		724F816A1BFD4603006C13FD /* dial_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81581BFD4603006C13FD /* dial_x1.png */; };
+		724F816B1BFD4603006C13FD /* dial_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81591BFD4603006C13FD /* dial_x2.png */; };
+		724F816C1BFD4603006C13FD /* dial_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F815A1BFD4603006C13FD /* dial_x3.png */; };
+		724F816D1BFD4603006C13FD /* icon_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F815B1BFD4603006C13FD /* icon_x1.png */; };
+		724F816E1BFD4603006C13FD /* icon_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F815C1BFD4603006C13FD /* icon_x2.png */; };
+		724F816F1BFD4603006C13FD /* icon_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F815D1BFD4603006C13FD /* icon_x3.png */; };
+		724F81701BFD4603006C13FD /* pointer_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F815E1BFD4603006C13FD /* pointer_x1.png */; };
+		724F81711BFD4603006C13FD /* pointer_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F815F1BFD4603006C13FD /* pointer_x2.png */; };
+		724F81721BFD4603006C13FD /* pointer_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81601BFD4603006C13FD /* pointer_x3.png */; };
+		724F81731BFD4603006C13FD /* pointer2_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81611BFD4603006C13FD /* pointer2_x1.png */; };
+		724F81741BFD4603006C13FD /* pointer2_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81621BFD4603006C13FD /* pointer2_x2.png */; };
+		724F81751BFD4603006C13FD /* pointer2_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81631BFD4603006C13FD /* pointer2_x3.png */; };
+		724F81761BFD4603006C13FD /* skander_logo_x1.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81641BFD4603006C13FD /* skander_logo_x1.png */; };
+		724F81771BFD4603006C13FD /* skander_logo_x2.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81651BFD4603006C13FD /* skander_logo_x2.png */; };
+		724F81781BFD4603006C13FD /* skander_logo_x3.png in Resources */ = {isa = PBXBuildFile; fileRef = 724F81661BFD4603006C13FD /* skander_logo_x3.png */; };
 		72A567641BE6439800255295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567631BE6439800255295 /* main.m */; };
 		72A567671BE6439800255295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A567661BE6439800255295 /* AppDelegate.m */; };
 		72A5676D1BE6439800255295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A5676B1BE6439800255295 /* Main.storyboard */; };
 		72A5676F1BE6439800255295 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A5676E1BE6439800255295 /* Assets.xcassets */; };
 		72A567721BE6439800255295 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A567701BE6439800255295 /* LaunchScreen.storyboard */; };
-		72A5677D1BE645B500255295 /* dial.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A5677A1BE645B500255295 /* dial.png */; };
-		72A567881BE6582000255295 /* pointer.png in Resources */ = {isa = PBXBuildFile; fileRef = 72A567871BE6582000255295 /* pointer.png */; };
-		72C87A781BE66D660042B734 /* cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C87A771BE66D660042B734 /* cover.png */; };
 		72C87A7B1BE66DCD0042B734 /* DialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C87A7A1BE66DCD0042B734 /* DialViewController.m */; };
 		72C87A7E1BE66DEF0042B734 /* CoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C87A7D1BE66DEF0042B734 /* CoverViewController.m */; };
 		72C87A831BE66DFE0042B734 /* BottomToTopSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C87A801BE66DFE0042B734 /* BottomToTopSegue.m */; };
 		72C87A841BE66DFE0042B734 /* TopToBottomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C87A821BE66DFE0042B734 /* TopToBottomSegue.m */; };
-		72C87A8A1BE677400042B734 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C87A891BE677400042B734 /* icon.png */; };
 		72C87A8D1BE6ACC70042B734 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C87A8B1BE6ACC70042B734 /* about.png */; };
 		72C87A8E1BE6ACC70042B734 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C87A8C1BE6ACC70042B734 /* settings.png */; };
 		72C87A911BE6FBEB0042B734 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72C87A901BE6FBEB0042B734 /* SettingsViewController.m */; };
-		72C87A931BE977890042B734 /* skander_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C87A921BE977890042B734 /* skander_logo.png */; };
 		72C87A991BE984D70042B734 /* back_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 72C87A981BE984D70042B734 /* back_left.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7209C39D1BEDA80800C07AF2 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
-		7209C39F1BEDA9CF00C07AF2 /* pointer2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer2.png; sourceTree = "<group>"; };
 		7209C3A11BEE7D4B00C07AF2 /* MyLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLocationViewController.h; sourceTree = "<group>"; };
 		7209C3A21BEE7D4B00C07AF2 /* MyLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLocationViewController.m; sourceTree = "<group>"; };
 		7209C3A41BEE7D7D00C07AF2 /* FavoriteLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteLocationViewController.h; sourceTree = "<group>"; };
@@ -65,6 +76,24 @@
 		7209C3C91BF19D9500C07AF2 /* favoriteplace.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = favoriteplace.db; sourceTree = "<group>"; };
 		7209C3CB1BF2D8B900C07AF2 /* GeoCalculations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoCalculations.h; sourceTree = "<group>"; };
 		7209C3CC1BF2D8B900C07AF2 /* GeoCalculations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoCalculations.m; sourceTree = "<group>"; };
+		724F81551BFD4603006C13FD /* cover_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover_x1.png; sourceTree = "<group>"; };
+		724F81561BFD4603006C13FD /* cover_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover_x2.png; sourceTree = "<group>"; };
+		724F81571BFD4603006C13FD /* cover_x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover_x3.png; sourceTree = "<group>"; };
+		724F81581BFD4603006C13FD /* dial_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_x1.png; sourceTree = "<group>"; };
+		724F81591BFD4603006C13FD /* dial_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_x2.png; sourceTree = "<group>"; };
+		724F815A1BFD4603006C13FD /* dial_x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial_x3.png; sourceTree = "<group>"; };
+		724F815B1BFD4603006C13FD /* icon_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_x1.png; sourceTree = "<group>"; };
+		724F815C1BFD4603006C13FD /* icon_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_x2.png; sourceTree = "<group>"; };
+		724F815D1BFD4603006C13FD /* icon_x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_x3.png; sourceTree = "<group>"; };
+		724F815E1BFD4603006C13FD /* pointer_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer_x1.png; sourceTree = "<group>"; };
+		724F815F1BFD4603006C13FD /* pointer_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer_x2.png; sourceTree = "<group>"; };
+		724F81601BFD4603006C13FD /* pointer_x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer_x3.png; sourceTree = "<group>"; };
+		724F81611BFD4603006C13FD /* pointer2_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer2_x1.png; sourceTree = "<group>"; };
+		724F81621BFD4603006C13FD /* pointer2_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer2_x2.png; sourceTree = "<group>"; };
+		724F81631BFD4603006C13FD /* pointer2_x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer2_x3.png; sourceTree = "<group>"; };
+		724F81641BFD4603006C13FD /* skander_logo_x1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skander_logo_x1.png; sourceTree = "<group>"; };
+		724F81651BFD4603006C13FD /* skander_logo_x2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skander_logo_x2.png; sourceTree = "<group>"; };
+		724F81661BFD4603006C13FD /* skander_logo_x3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skander_logo_x3.png; sourceTree = "<group>"; };
 		72A5675F1BE6439800255295 /* favoriteplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = favoriteplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A567631BE6439800255295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		72A567651BE6439800255295 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,9 +102,6 @@
 		72A5676E1BE6439800255295 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72A567711BE6439800255295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72A567731BE6439800255295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72A5677A1BE645B500255295 /* dial.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dial.png; sourceTree = "<group>"; };
-		72A567871BE6582000255295 /* pointer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pointer.png; sourceTree = "<group>"; };
-		72C87A771BE66D660042B734 /* cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cover.png; sourceTree = "<group>"; };
 		72C87A791BE66DCD0042B734 /* DialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialViewController.h; sourceTree = "<group>"; };
 		72C87A7A1BE66DCD0042B734 /* DialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialViewController.m; sourceTree = "<group>"; };
 		72C87A7C1BE66DEF0042B734 /* CoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverViewController.h; sourceTree = "<group>"; };
@@ -84,12 +110,10 @@
 		72C87A801BE66DFE0042B734 /* BottomToTopSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BottomToTopSegue.m; sourceTree = "<group>"; };
 		72C87A811BE66DFE0042B734 /* TopToBottomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopToBottomSegue.h; sourceTree = "<group>"; };
 		72C87A821BE66DFE0042B734 /* TopToBottomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopToBottomSegue.m; sourceTree = "<group>"; };
-		72C87A891BE677400042B734 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		72C87A8B1BE6ACC70042B734 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		72C87A8C1BE6ACC70042B734 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
 		72C87A8F1BE6FBEB0042B734 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
 		72C87A901BE6FBEB0042B734 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		72C87A921BE977890042B734 /* skander_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = skander_logo.png; sourceTree = "<group>"; };
 		72C87A981BE984D70042B734 /* back_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back_left.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,19 +133,31 @@
 		72A567561BE6439700255295 = {
 			isa = PBXGroup;
 			children = (
+				724F81551BFD4603006C13FD /* cover_x1.png */,
+				724F81561BFD4603006C13FD /* cover_x2.png */,
+				724F81571BFD4603006C13FD /* cover_x3.png */,
+				724F81581BFD4603006C13FD /* dial_x1.png */,
+				724F81591BFD4603006C13FD /* dial_x2.png */,
+				724F815A1BFD4603006C13FD /* dial_x3.png */,
+				724F815B1BFD4603006C13FD /* icon_x1.png */,
+				724F815C1BFD4603006C13FD /* icon_x2.png */,
+				724F815D1BFD4603006C13FD /* icon_x3.png */,
+				724F815E1BFD4603006C13FD /* pointer_x1.png */,
+				724F815F1BFD4603006C13FD /* pointer_x2.png */,
+				724F81601BFD4603006C13FD /* pointer_x3.png */,
+				724F81611BFD4603006C13FD /* pointer2_x1.png */,
+				724F81621BFD4603006C13FD /* pointer2_x2.png */,
+				724F81631BFD4603006C13FD /* pointer2_x3.png */,
+				724F81641BFD4603006C13FD /* skander_logo_x1.png */,
+				724F81651BFD4603006C13FD /* skander_logo_x2.png */,
+				724F81661BFD4603006C13FD /* skander_logo_x3.png */,
 				7209C3C91BF19D9500C07AF2 /* favoriteplace.db */,
 				7209C3C71BF18A0300C07AF2 /* CoreLocation.framework */,
 				7209C3C51BF02FB400C07AF2 /* libsqlite3.tbd */,
-				7209C39F1BEDA9CF00C07AF2 /* pointer2.png */,
 				7209C39D1BEDA80800C07AF2 /* line.png */,
 				72C87A981BE984D70042B734 /* back_left.png */,
-				72C87A921BE977890042B734 /* skander_logo.png */,
 				72C87A8B1BE6ACC70042B734 /* about.png */,
 				72C87A8C1BE6ACC70042B734 /* settings.png */,
-				72C87A891BE677400042B734 /* icon.png */,
-				72C87A771BE66D660042B734 /* cover.png */,
-				72A567871BE6582000255295 /* pointer.png */,
-				72A5677A1BE645B500255295 /* dial.png */,
 				72A567611BE6439800255295 /* favoriteplace */,
 				72A567601BE6439800255295 /* Products */,
 			);
@@ -243,20 +279,32 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				724F816E1BFD4603006C13FD /* icon_x2.png in Resources */,
 				72A567721BE6439800255295 /* LaunchScreen.storyboard in Resources */,
-				72C87A931BE977890042B734 /* skander_logo.png in Resources */,
-				72C87A8A1BE677400042B734 /* icon.png in Resources */,
+				724F81741BFD4603006C13FD /* pointer2_x2.png in Resources */,
 				7209C3CA1BF19D9500C07AF2 /* favoriteplace.db in Resources */,
-				72A5677D1BE645B500255295 /* dial.png in Resources */,
 				7209C39E1BEDA80800C07AF2 /* line.png in Resources */,
 				72A5676F1BE6439800255295 /* Assets.xcassets in Resources */,
-				7209C3A01BEDA9CF00C07AF2 /* pointer2.png in Resources */,
-				72C87A781BE66D660042B734 /* cover.png in Resources */,
+				724F81781BFD4603006C13FD /* skander_logo_x3.png in Resources */,
+				724F816A1BFD4603006C13FD /* dial_x1.png in Resources */,
+				724F81671BFD4603006C13FD /* cover_x1.png in Resources */,
+				724F81711BFD4603006C13FD /* pointer_x2.png in Resources */,
+				724F81721BFD4603006C13FD /* pointer_x3.png in Resources */,
+				724F816B1BFD4603006C13FD /* dial_x2.png in Resources */,
+				724F81681BFD4603006C13FD /* cover_x2.png in Resources */,
+				724F81771BFD4603006C13FD /* skander_logo_x2.png in Resources */,
 				72C87A991BE984D70042B734 /* back_left.png in Resources */,
 				72A5676D1BE6439800255295 /* Main.storyboard in Resources */,
+				724F816D1BFD4603006C13FD /* icon_x1.png in Resources */,
+				724F81731BFD4603006C13FD /* pointer2_x1.png in Resources */,
+				724F816C1BFD4603006C13FD /* dial_x3.png in Resources */,
 				72C87A8E1BE6ACC70042B734 /* settings.png in Resources */,
-				72A567881BE6582000255295 /* pointer.png in Resources */,
+				724F81701BFD4603006C13FD /* pointer_x1.png in Resources */,
+				724F81691BFD4603006C13FD /* cover_x3.png in Resources */,
+				724F816F1BFD4603006C13FD /* icon_x3.png in Resources */,
 				72C87A8D1BE6ACC70042B734 /* about.png in Resources */,
+				724F81761BFD4603006C13FD /* skander_logo_x1.png in Resources */,
+				724F81751BFD4603006C13FD /* pointer2_x3.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
