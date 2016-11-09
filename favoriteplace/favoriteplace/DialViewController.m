@@ -49,8 +49,8 @@
     
     NSLog(@" Heading %f, Distance %f", self.heading, self.distance);
     
-    double direction = (int)self.heading * M_PI / 180;
-    [self pointer2ImageView].transform = CGAffineTransformMakeRotation(direction);
+    //double direction = (int)self.heading * M_PI / 180;
+    //[self pointer2ImageView].transform = CGAffineTransformMakeRotation(direction);
     
     self.dialMenu.delegate = self;
     
@@ -88,7 +88,10 @@
     dispatch_async(dispatch_get_main_queue(), ^{
         double degrees = newHeading.magneticHeading;
         double radians = degrees * M_PI / 180;
-        [self pointerImageView].transform = CGAffineTransformMakeRotation(radians);
+        double direction = (int)self.heading * M_PI / 180;
+        [self pointer2ImageView].transform = CGAffineTransformMakeRotation(radians+direction);
+        [self dialImageView].transform = CGAffineTransformMakeRotation(radians);
+        //[self pointerImageView].transform = CGAffineTransformMakeRotation(radians);
         [[self locationAngleLabel] setText:[NSString stringWithFormat:@"%d˚",(int)degrees]];
     });
 }
