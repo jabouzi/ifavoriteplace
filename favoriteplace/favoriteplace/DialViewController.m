@@ -85,14 +85,25 @@
 
 - (void) locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading
 {
+    double direction = (int)self.heading * M_PI / 180;
     dispatch_async(dispatch_get_main_queue(), ^{
-        double degrees = newHeading.magneticHeading;
+        /*double degrees = newHeading.magneticHeading;
         double radians = degrees * M_PI / 180;
         double direction = (int)self.heading * M_PI / 180;
         [self pointer2ImageView].transform = CGAffineTransformMakeRotation(radians+direction);
         [self dialImageView].transform = CGAffineTransformMakeRotation(radians);
-        //[self pointerImageView].transform = CGAffineTransformMakeRotation(radians);
-        [[self locationAngleLabel] setText:[NSString stringWithFormat:@"%d˚",(int)degrees]];
+        //[self pointerImageView].transform = CGAffineTransformMakeRotation(radians);*/
+        float oldRad =  -manager.heading.trueHeading * M_PI / 180.0f;
+        float newRad =  -newHeading.trueHeading * M_PI / 180.0f;
+        
+        [UIView animateWithDuration:0.2
+                         animations:^{
+                             _dialImageView.transform = CGAffineTransformMakeRotation(newRad);
+                             _pointer2ImageView.transform = CGAffineTransformMakeRotation(newRad+direction);
+                         }];
+
+        [[self locationAngleLabel] setText:[NSString stringWithFormat:@"%d˚",(int)newHeading.trueHeading]];
+        NSLog(@"%f (%f) => %f (%f)", manager.heading.trueHeading, oldRad, newHeading.trueHeading, newRad);
     });
 }
 

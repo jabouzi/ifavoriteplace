@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <QuartzCore/QuartzCore.h>
 #import "LocationDataSource.h"
 #import "FavoriteDataSource.h"
 #import "GeoCalculations.h"
