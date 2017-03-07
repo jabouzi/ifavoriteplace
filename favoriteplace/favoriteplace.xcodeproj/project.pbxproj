@@ -129,29 +129,10 @@
 		72A567561BE6439700255295 = {
 			isa = PBXGroup;
 			children = (
-				724F81791BFD77E1006C13FD /* skander_logo.png */,
-				724F81551BFD4603006C13FD /* cover_x1.png */,
-				724F81561BFD4603006C13FD /* cover_x2.png */,
-				724F81571BFD4603006C13FD /* cover_x3.png */,
-				724F81581BFD4603006C13FD /* dial_x1.png */,
-				724F81591BFD4603006C13FD /* dial_x2.png */,
-				724F815A1BFD4603006C13FD /* dial_x3.png */,
-				724F815B1BFD4603006C13FD /* icon_x1.png */,
-				724F815C1BFD4603006C13FD /* icon_x2.png */,
-				724F815D1BFD4603006C13FD /* icon_x3.png */,
-				724F815E1BFD4603006C13FD /* pointer_x1.png */,
-				724F815F1BFD4603006C13FD /* pointer_x2.png */,
-				724F81601BFD4603006C13FD /* pointer_x3.png */,
-				724F81611BFD4603006C13FD /* pointer2_x1.png */,
-				724F81621BFD4603006C13FD /* pointer2_x2.png */,
-				724F81631BFD4603006C13FD /* pointer2_x3.png */,
+				D75D03311E6F098F000D75A3 /* img */,
 				7209C3C91BF19D9500C07AF2 /* favoriteplace.db */,
 				7209C3C71BF18A0300C07AF2 /* CoreLocation.framework */,
 				7209C3C51BF02FB400C07AF2 /* libsqlite3.tbd */,
-				7209C39D1BEDA80800C07AF2 /* line.png */,
-				72C87A981BE984D70042B734 /* back_left.png */,
-				72C87A8B1BE6ACC70042B734 /* about.png */,
-				72C87A8C1BE6ACC70042B734 /* settings.png */,
 				72A567611BE6439800255295 /* favoriteplace */,
 				72A567601BE6439800255295 /* Products */,
 			);
@@ -168,40 +149,14 @@
 		72A567611BE6439800255295 /* favoriteplace */ = {
 			isa = PBXGroup;
 			children = (
-				7209C3A71BEEDECF00C07AF2 /* AboutViewController.h */,
-				72A567651BE6439800255295 /* AppDelegate.h */,
-				72C87A7F1BE66DFE0042B734 /* BottomToTopSegue.h */,
-				72C87A7C1BE66DEF0042B734 /* CoverViewController.h */,
-				7209C3B21BF0295300C07AF2 /* DBManager.h */,
-				72C87A791BE66DCD0042B734 /* DialViewController.h */,
-				7209C3B81BF0298A00C07AF2 /* Favorite.h */,
-				7209C3BE1BF029C200C07AF2 /* FavoriteDataSource.h */,
-				7209C3A41BEE7D7D00C07AF2 /* FavoriteLocationViewController.h */,
-				7209C3B51BF0297500C07AF2 /* Location.h */,
-				7209C3BB1BF029AB00C07AF2 /* LocationDataSource.h */,
-				7209C3A11BEE7D4B00C07AF2 /* MyLocationViewController.h */,
-				72C87A8F1BE6FBEB0042B734 /* SettingsViewController.h */,
-				72C87A811BE66DFE0042B734 /* TopToBottomSegue.h */,
-				7209C3A81BEEDECF00C07AF2 /* AboutViewController.m */,
-				72A567661BE6439800255295 /* AppDelegate.m */,
-				72C87A801BE66DFE0042B734 /* BottomToTopSegue.m */,
-				72C87A7D1BE66DEF0042B734 /* CoverViewController.m */,
-				7209C3B31BF0295300C07AF2 /* DBManager.m */,
-				72C87A7A1BE66DCD0042B734 /* DialViewController.m */,
-				7209C3B91BF0298A00C07AF2 /* Favorite.m */,
-				7209C3BF1BF029C200C07AF2 /* FavoriteDataSource.m */,
-				7209C3A51BEE7D7D00C07AF2 /* FavoriteLocationViewController.m */,
-				7209C3B61BF0297500C07AF2 /* Location.m */,
-				7209C3BC1BF029AB00C07AF2 /* LocationDataSource.m */,
-				7209C3A21BEE7D4B00C07AF2 /* MyLocationViewController.m */,
-				72C87A901BE6FBEB0042B734 /* SettingsViewController.m */,
-				72C87A821BE66DFE0042B734 /* TopToBottomSegue.m */,
-				7209C3CB1BF2D8B900C07AF2 /* GeoCalculations.h */,
-				7209C3CC1BF2D8B900C07AF2 /* GeoCalculations.m */,
+				D75D03371E6F0A3D000D75A3 /* Helpers */,
+				D75D03361E6F0A2A000D75A3 /* Models */,
+				D75D03351E6F0A19000D75A3 /* App */,
+				D75D03341E6F09F7000D75A3 /* ViewControllers */,
+				D75D03331E6F09DC000D75A3 /* DB */,
+				D75D03321E6F09BE000D75A3 /* Storyboards */,
 				72A567731BE6439800255295 /* Info.plist */,
 				72A5676E1BE6439800255295 /* Assets.xcassets */,
-				72A567701BE6439800255295 /* LaunchScreen.storyboard */,
-				72A5676B1BE6439800255295 /* Main.storyboard */,
 				72A567621BE6439800255295 /* Supporting Files */,
 			);
 			path = favoriteplace;
@@ -213,6 +168,107 @@
 				72A567631BE6439800255295 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D75D03311E6F098F000D75A3 /* img */ = {
+			isa = PBXGroup;
+			children = (
+				7209C39D1BEDA80800C07AF2 /* line.png */,
+				72C87A981BE984D70042B734 /* back_left.png */,
+				72C87A8B1BE6ACC70042B734 /* about.png */,
+				72C87A8C1BE6ACC70042B734 /* settings.png */,
+				724F81791BFD77E1006C13FD /* skander_logo.png */,
+				724F81551BFD4603006C13FD /* cover_x1.png */,
+				724F81561BFD4603006C13FD /* cover_x2.png */,
+				724F81571BFD4603006C13FD /* cover_x3.png */,
+				724F81581BFD4603006C13FD /* dial_x1.png */,
+				724F81591BFD4603006C13FD /* dial_x2.png */,
+				724F815A1BFD4603006C13FD /* dial_x3.png */,
+				724F815B1BFD4603006C13FD /* icon_x1.png */,
+				724F815C1BFD4603006C13FD /* icon_x2.png */,
+				724F815D1BFD4603006C13FD /* icon_x3.png */,
+				724F815E1BFD4603006C13FD /* pointer_x1.png */,
+				724F815F1BFD4603006C13FD /* pointer_x2.png */,
+				724F81601BFD4603006C13FD /* pointer_x3.png */,
+				724F81611BFD4603006C13FD /* pointer2_x1.png */,
+				724F81621BFD4603006C13FD /* pointer2_x2.png */,
+				724F81631BFD4603006C13FD /* pointer2_x3.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+		D75D03321E6F09BE000D75A3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				72A567701BE6439800255295 /* LaunchScreen.storyboard */,
+				72A5676B1BE6439800255295 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		D75D03331E6F09DC000D75A3 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				7209C3B21BF0295300C07AF2 /* DBManager.h */,
+				7209C3BE1BF029C200C07AF2 /* FavoriteDataSource.h */,
+				7209C3BB1BF029AB00C07AF2 /* LocationDataSource.h */,
+				7209C3B31BF0295300C07AF2 /* DBManager.m */,
+				7209C3BF1BF029C200C07AF2 /* FavoriteDataSource.m */,
+				7209C3BC1BF029AB00C07AF2 /* LocationDataSource.m */,
+			);
+			name = DB;
+			sourceTree = "<group>";
+		};
+		D75D03341E6F09F7000D75A3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7209C3A71BEEDECF00C07AF2 /* AboutViewController.h */,
+				72C87A7C1BE66DEF0042B734 /* CoverViewController.h */,
+				72C87A791BE66DCD0042B734 /* DialViewController.h */,
+				7209C3A41BEE7D7D00C07AF2 /* FavoriteLocationViewController.h */,
+				7209C3A11BEE7D4B00C07AF2 /* MyLocationViewController.h */,
+				72C87A8F1BE6FBEB0042B734 /* SettingsViewController.h */,
+				7209C3A81BEEDECF00C07AF2 /* AboutViewController.m */,
+				72C87A7D1BE66DEF0042B734 /* CoverViewController.m */,
+				72C87A7A1BE66DCD0042B734 /* DialViewController.m */,
+				7209C3A51BEE7D7D00C07AF2 /* FavoriteLocationViewController.m */,
+				7209C3A21BEE7D4B00C07AF2 /* MyLocationViewController.m */,
+				72C87A901BE6FBEB0042B734 /* SettingsViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D75D03351E6F0A19000D75A3 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				72A567651BE6439800255295 /* AppDelegate.h */,
+				72A567661BE6439800255295 /* AppDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		D75D03361E6F0A2A000D75A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7209C3B81BF0298A00C07AF2 /* Favorite.h */,
+				7209C3B51BF0297500C07AF2 /* Location.h */,
+				7209C3B91BF0298A00C07AF2 /* Favorite.m */,
+				7209C3B61BF0297500C07AF2 /* Location.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D75D03371E6F0A3D000D75A3 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				72C87A7F1BE66DFE0042B734 /* BottomToTopSegue.h */,
+				72C87A811BE66DFE0042B734 /* TopToBottomSegue.h */,
+				72C87A801BE66DFE0042B734 /* BottomToTopSegue.m */,
+				72C87A821BE66DFE0042B734 /* TopToBottomSegue.m */,
+				7209C3CB1BF2D8B900C07AF2 /* GeoCalculations.h */,
+				7209C3CC1BF2D8B900C07AF2 /* GeoCalculations.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,7 +302,7 @@
 				TargetAttributes = {
 					72A5675E1BE6439700255295 = {
 						CreatedOnToolsVersion = 7.1;
-						DevelopmentTeam = XN7WT8UAF9;
+						DevelopmentTeam = 2Q3M5SLHJL;
 					};
 				};
 			};
@@ -438,7 +494,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = XN7WT8UAF9;
+				DEVELOPMENT_TEAM = 2Q3M5SLHJL;
 				INFOPLIST_FILE = favoriteplace/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -454,7 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = XN7WT8UAF9;
+				DEVELOPMENT_TEAM = 2Q3M5SLHJL;
 				INFOPLIST_FILE = favoriteplace/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
